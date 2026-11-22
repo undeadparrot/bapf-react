@@ -188,12 +188,12 @@ export const IMAGES = {
   BillyMonkSquare: {
     filename: billyMonkSquarePng,
     title: "Billy Monk",
-    description: "Billy Monk in square",
+    description: "Billy Monk in square. © Billy Monk Collection",
   },
   BillyMonk: {
     filename: billyMonkJpg,
     title: "Billy Monk",
-    description: "Billy Monk",
+    description: "Billy Monk © Billy Monk Collection",
   },
   CarolSquare: {
     filename: carolSquarePng,
@@ -203,17 +203,17 @@ export const IMAGES = {
   GalleryFPoster: {
     filename: gallery2fPosterPng,
     title: "GalleryF Poster",
-    description: "GalleryF poster",
+    description: "GalleryF poster © Gavin Furlonger",
   },
   GavinFurlongerSquare: {
     filename: gavinFurlongerSquarePng,
     title: "Gavin Furlonger",
-    description: "Gavin Furlonger in square",
+    description: "Gavin Furlonger in square © Gavin Furlonger",
   },
   GavinFurlonger: {
     filename: gavinFurlongerPng,
     title: "Gavin Furlonger",
-    description: "Gavin Furlonger",
+    description: "Gavin Furlonger © Gavin Furlonger",
   },
   JurgenSchadebergSquare: {
     filename: jurgenSchadebergSquarePng,
