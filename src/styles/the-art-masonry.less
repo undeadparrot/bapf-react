@@ -1,0 +1,91 @@
+@media screen and (min-width: 400px) and (max-width: 800px) {
+  .TheArt__masonry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    justify-items: center;
+    main {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .BapfImage {
+        max-height: 150px;
+    }
+  }
+}
+@media screen and (min-width: 800px) {
+  .TheArt__masonry {
+    margin-top: 6em;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
+
+    .BapfImage {
+      max-width: 100%;
+    }
+
+    main {
+      // background-color: blue;
+      // margin-top: -10em !important;
+      // margin-bottom: 3em !important;
+      grid-column: 2;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-row: 2;
+      padding-left: 5em;
+      padding-right: 5em;
+    }
+    .HeroQuote {
+      grid-column: 2;
+      grid-row: 1;
+    }
+    .HeroQuote p {
+      margin-bottom: 0px;
+    }
+    // positioning things in the layout
+    .TheArt__l {
+      grid-column: 1;
+    }
+    .TheArt__m {
+      grid-column: 2;
+      // margin-top: -5em;
+      // margin-bottom: 5em;
+    }
+    .TheArt__r {
+      grid-column: 3;
+    }
+    .TheArt__row1 {
+      grid-row: 3;
+    }
+    .TheArt__row2 {
+      grid-row: 4;
+    }
+    .TheArt__row3 {
+      grid-row: 5;
+    }
+    .TheArt__row4 {
+      grid-row: 6;
+    }
+    .TheArt__row5 {
+      grid-row: 7;
+    }
+  }
+
+  .TheArt__masonry--2026 {
+    .TheArt__row1 {
+      align-self: end;
+    }
+    .TheArt__row2,
+    .TheArt__row3 {
+      align-self: center;
+    }
+    .TheArt__m.TheArt__row2 {
+      grid-row-start: 3;
+      grid-row-end: 6;
+      // margin-bottom: 0em;
+    }
+  }
+}

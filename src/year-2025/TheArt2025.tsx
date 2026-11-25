@@ -74,7 +74,6 @@ function TheArt__Roy2025() {
 
 function TheArt__Patrick2025() {
   return (<>
-
       <h3 className="BapfHiddenHeading">
         Patrick <strong>de Mervelec</strong>
       </h3>
@@ -83,13 +82,11 @@ function TheArt__Patrick2025() {
           Selected works from <br /> <strong>Nude Landscape</strong> and <br/><strong>My Pilgrimage with Johnny Clegg</strong> <br/> by <strong>Patrick de Mervelec</strong>
         </p>
       </HeroQuote>
-      <div className="TheArt__Patrick2025">
-        <BapfImg
-          className="TheArt__Patrick2025__hero"
-          imageInfo={IMAGES.Bapf2025ArtPatrickdemervelacNude1}
-          lightboxOnClick
-        />
-        <br/>
+      <BapfImg
+        className="TheArt__Patrick2025__hero"
+        imageInfo={IMAGES.Bapf2025ArtPatrickdemervelacNude1}
+        lightboxOnClick
+      />
         <div className="TheArt__Patrick2025__others">
         <BapfImg
           imageInfo={IMAGES.Bapf2025ArtPatrickdemervelacStreet}
@@ -99,17 +96,16 @@ function TheArt__Patrick2025() {
           imageInfo={IMAGES.Bapf2025ArtPatrickdemervelacMusic}
           lightboxOnClick
         />
-        </div>
-      </div></>)
+        </div></>)
 }
 
 export function TheArt2025Masonry() {
   return (
-    <div className="TheArt__masonry">
-      <main className="TheArt__m TheArt__row1">
-        <HeroQuote>
-          The <strong>Art</strong>
-        </HeroQuote>
+    <div className="TheArt__masonry TheArt__masonry--2026">
+      <HeroQuote>
+        The <strong>Art</strong>
+      </HeroQuote>
+      <main >
         <p className="TheArt__hideonmobile">
           The Festival has on display some of the very best photographic pieces
           from South Africa’s highly talented analog photographers.
@@ -138,7 +134,7 @@ export function TheArt2025Masonry() {
         lightboxOnClick
       />
       <BapfImg
-        imageInfo={IMAGES.Bapf2025ArtHermanVanWykCar}
+        imageInfo={IMAGES.Bapf2025ArtRoyZetiskyModel3}
         className="TheArt__m TheArt__row2"
         lightboxOnClick
       />
@@ -152,11 +148,11 @@ export function TheArt2025Masonry() {
         className="TheArt__l TheArt__row3"
         lightboxOnClick
       />
-      <BapfImg
-        imageInfo={IMAGES.Bapf2025ArtRoyZetiskyModel3}
+      {/* <BapfImg
+        imageInfo={IMAGES.Bapf2025ArtHermanVanWykCar}
         className="TheArt__m TheArt__row3"
         lightboxOnClick
-      />
+      /> */}
       <BapfImg
         imageInfo={IMAGES.Bapf2025ArtRoyZetiskyDocumentary4}
         className="TheArt__r TheArt__row3"

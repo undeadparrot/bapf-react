@@ -1,0 +1,207 @@
+
+@notblack: #1a1a1a;
+@notblack-fade: rgba(26, 26, 26, 0.5);
+
+.__hero_outline() {
+
+    @media screen and (min-width: 390px){
+      -webkit-text-stroke: 0.5px white;
+      &:hover strong {
+        -webkit-text-stroke-color: white;
+      }
+    }
+    @media screen and (min-width: 450px){
+      color: transparent;
+      -webkit-text-stroke-width: 1.0px;
+      strong {
+        -webkit-text-stroke: 0.5px @notblack;
+        color: white;
+      }
+    }
+    @media screen and (min-width: 500px){
+      -webkit-text-stroke-width: 1.0px;
+      strong {
+        -webkit-text-stroke-width: 1.0px;
+      }
+    }
+
+    @media screen and (min-width: 390px){
+      -webkit-text-stroke: 0.5px white;
+      &:hover strong {
+        -webkit-text-stroke-color: white;
+      }
+    }
+    @media screen and (min-width: 450px){
+      color: transparent;
+      -webkit-text-stroke-width: 1.0px;
+      strong {
+        -webkit-text-stroke: 0.5px @notblack;
+        color: white;
+      }
+    }
+    @media screen and (min-width: 500px){
+      -webkit-text-stroke-width: 1.0px;
+      strong {
+        -webkit-text-stroke-width: 1.0px;
+      }
+    }
+}
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-weight: 700;
+    font-family: "Caladea";
+    // color: transparent;
+    transition: 0.5s color;
+    text-transform: uppercase;
+    a {
+      color: @notblack;
+    }
+    clear: left;
+  }
+
+  h1:hover,
+  h1:hover a,
+  h2:hover,
+  h2:hover a,
+  h3:hover,
+  h3:hover a,
+  h4:hover,
+  h4:hover a {
+    color: white;
+  }
+
+  .HeroQuote {
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    font-family: "Caladea";
+    p {
+      text-align: center !important;
+    }
+    
+    color: darkgray;
+    strong {
+      color: white;
+    }
+
+    .__hero_outline();
+  }
+  .HeroQuote__long p {
+    font-size: x-large;
+    // font-style: italic;
+    line-height: 100%;
+  }
+
+  h1,
+  .HeroQuote {
+    font-size: xx-large;
+    text-align: center;
+    line-height: 1em;
+  }
+
+  h2 {
+    font-size: xx-large;
+    margin-bottom: 0.5em;
+    &::after {
+      content: ".";
+    }
+
+    .__hero_outline();
+    
+  }
+
+  h3 {
+    font-size: x-large;
+    &::after {
+      content: ".";
+    }
+    
+    
+  // }
+  // /* for mobile */
+  // @media (max-width: 767px) {
+  //   h3 {
+  //     font-size: 40pt;
+  //   }
+  }
+
+  // h4 {
+  //   -webkit-text-stroke: 0.25px white;
+  //   color: transparent;
+  //   &:hover strong {
+  //     -webkit-text-stroke-color: white;
+  //   }
+  //   strong {
+  //     // -webkit-text-stroke: 0.5px @notblack;
+  //     color: white;
+  //   }
+  // }
+
+  // h5 strong {
+  //   // -webkit-text-stroke: 1.5px @notblack;
+  //   color: white;
+  // }
+
+.onlyVisibleToScreenReaders {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.BapfHiddenHeading {
+  .onlyVisibleToScreenReaders();
+}
+
+@media (min-width: 479px) {
+  .HeroQuote {
+    font-size: 56px;
+  }
+  .HeroQuote__long p {
+    font-size: 32px;
+  }
+}
+@media (min-width: 767px) {
+  .HeroQuote {
+    font-size: 60px;
+  }
+  .HeroQuote__long p {
+    font-size: 48px;
+  }
+}
+@media (min-width: 991px) {
+  .HeroQuote {
+    font-size: 80px;
+  }
+  .HeroQuote__long p {
+    font-size: 48px;
+  }
+}
+@media (min-width: 1120px) {
+  .HeroQuote {
+    font-size: 120px;
+  }
+  .HeroQuote__long p {
+    font-size: 60px;
+  }
+}
+
+
+
+
+.HeroQuote--medium {
+  font-size: larger;
+  text-align: center;
+}
+
+.BapfTopBar header .HeroQuote {
+  color: transparent;
+  -webkit-text-stroke-color: white !important;
+  -webkit-text-stroke-width: 1.5px !important;
+}

@@ -3,7 +3,7 @@ import { Article, BapfImg } from "../components";
 export function Bapf2023() {
   return (
     <Article
-      articleId="bapf-2023"
+      articleId="previously-bapf-2023"
       heading={
         <>
           Looking back at <strong>BAPF 2023</strong>

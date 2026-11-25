@@ -8,7 +8,7 @@ export function Bapf2022(){
     return (
 
                 <Article
-                  articleId="bapf-2022"
+                  articleId="previously-bapf-2022"
                   heading={
                     <>
                       Looking back at <strong>BAPF 2022</strong>

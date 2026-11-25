@@ -2,7 +2,12 @@ import { useState } from "react";
 import "../App.less";
 import { IMAGES } from "../images";
 import logo from "../assets/Logo.webp";
-import { HeroQuote, Article, BapfImg, strongifyFirstNWord } from "../components";
+import {
+  HeroQuote,
+  Article,
+  BapfImg,
+  strongifyFirstNWord,
+} from "../components";
 import { TheContactDetails2024 } from "../year-2024/TheContactDetails2024";
 import { TheVenue2024 } from "../year-2024/TheVenue2024";
 import { TheHistory2024 } from "../year-2024/TheHistory2024";
@@ -35,17 +40,14 @@ export function Bapf2025App() {
         <nav>
           <ul>
             <li>
-              <a
-                href="/"
-                onClick={() => setExposeHiddenHeadings(true)}
-              >
+              <a href="/" onClick={() => setExposeHiddenHeadings(true)}>
                 BAPF 2026
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <span>|</span>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-programme"
                 onClick={() => setExposeHiddenHeadings(true)}
@@ -58,39 +60,39 @@ export function Bapf2025App() {
                 href="#the-speakers"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Speakers
+                Speakers
               </a>
             </li> */}
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-workshops"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Workshops
+                Workshops
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-venue"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Venue
+                Venue
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only BapfNav--screenreaders-only">
               <a
                 href="#the-history"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The History
+                History
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-sponsors"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Sponsors
+                Sponsors
               </a>
             </li>
             <li>
@@ -98,7 +100,7 @@ export function Bapf2025App() {
                 BAPF 2024
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <span>|</span>
             </li>
             <li>
@@ -116,12 +118,12 @@ export function Bapf2025App() {
         </nav>
       </div>
       <main id="main-content" data-exposehiddenheadings={exposeHiddenHeadings}>
-        <h1>
+        <h1 className="HeroQuote">
           The <strong>Barrydale</strong> <br />
           <strong>Analog</strong> Photo <br />
           Festival.
         </h1>
-        <div className="BapfMainPoster">
+        <div className="BapfMainPoster BapfMainPoster--double">
           <BapfImg imageInfo={IMAGES.bapf2025Poster} />
           <BapfImg imageInfo={IMAGES.Bapf2025PosterProgramme} />
         </div>
@@ -130,7 +132,10 @@ export function Bapf2025App() {
             imageInfo={IMAGES.Bapf2025GoldblattPosterJpeg}
             className="BapfMainPoster"
           />
-          <BapfImg imageInfo={IMAGES.Bapf2025SeanWilsonPosterImmortalimpressionsJpeg} className="BapfMainPoster" />
+          <BapfImg
+            imageInfo={IMAGES.Bapf2025SeanWilsonPosterImmortalimpressionsJpeg}
+            className="BapfMainPoster"
+          />
         </div>
         <div className="BapfSecondaryPosters">
           <BapfImg
@@ -147,7 +152,10 @@ export function Bapf2025App() {
             imageInfo={IMAGES.Bapf2025RodgerBoschPosterJpeg}
             className="BapfMainPoster"
           />
-          <BapfImg imageInfo={IMAGES.Bapf2025HermanVanWykPosterJpeg} className="BapfMainPoster" />
+          <BapfImg
+            imageInfo={IMAGES.Bapf2025HermanVanWykPosterJpeg}
+            className="BapfMainPoster"
+          />
         </div>
 
         <div className="BapfSecondaryPosters">
@@ -155,7 +163,10 @@ export function Bapf2025App() {
             imageInfo={IMAGES.Bapf2025PosterJillianEdelstein}
             className="BapfMainPoster"
           />
-          <BapfImg imageInfo={IMAGES.Bapf2025PosterDrum} className="BapfMainPoster" />
+          <BapfImg
+            imageInfo={IMAGES.Bapf2025PosterDrum}
+            className="BapfMainPoster"
+          />
         </div>
 
         <Article
@@ -180,7 +191,7 @@ export function Bapf2025App() {
         </Article>
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Living in The Unknown</strong>.
         </HeroQuote>
@@ -261,6 +272,7 @@ export function Bapf2025App() {
               held from the 9-19 Dec 2022
             </p>
             <iframe
+              className="BapfYoutubePlayer"
               width="370"
               height="210"
               src="https://www.youtube.com/embed/DVz3zDPj0NA?si=4sjCgzGRzfGg2GH3"
@@ -284,7 +296,7 @@ export function Bapf2025App() {
         <TheWorkshops2025 />
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Emotion made Tangible</strong>.
         </HeroQuote>

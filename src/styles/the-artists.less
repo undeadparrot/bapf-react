@@ -1,0 +1,36 @@
+@import './__image-row.less';
+
+// that row of images with assorted artists
+.BapfOtherArtists {
+  .__image_row();
+}
+
+.ArtistProfile {
+  .BapfImage {
+    max-width: 250px;
+  }
+}
+.ArtistProfile__pic {
+  // max-width: 14em;
+}
+
+@media screen and (min-width: 440px) {
+  .ArtistProfile {
+    // display: block;
+    // flex-direction: column;
+    .ArtistProfile__pic{
+      float: left;}
+    .BapfImage {
+      margin-right: 1.5em;
+      margin-bottom: 1.0em;
+    }
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .ArtistProfile {
+    .ArtistProfile__pic {
+      margin-left: -1em;
+    }
+  }
+}

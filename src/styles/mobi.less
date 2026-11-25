@@ -1,0 +1,318 @@
+@notblack: #1a1a1a;
+@notblack-fade: rgba(26, 26, 26, 0.5);
+
+@media (min-width: 767px) {
+  #root > main {
+    width: 70em;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 80pt;
+  }
+}
+
+@media screen {
+  .BapfArticle__firstp {
+    margin-block-start: 0px;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .BapfArticle {
+    text-align: center;
+    p {
+      font-size: 24pt;
+      text-align: left;
+    }
+  }
+  /* bigger spaces between articles */
+  .BapfArticle {
+    margin-bottom: 12em;
+  }
+  h2,
+  h3 {
+    margin-top: 3em;
+  }
+}
+
+
+/* for mobile */
+@media (max-width: 767px) {
+  .BapfArticle {
+    text-align: center;
+    p {
+      font-size: 24pt;
+      text-align: left;
+    }
+  }
+  /* bigger spaces between articles */
+  .BapfArticle {
+    margin-bottom: 12em;
+  }
+  h2,
+  h3 {
+    margin-top: 3em;
+  }
+}
+
+/* for desktop */
+@media (min-width: 767px) {
+  .BapfSecondaryPosters {
+    flex-direction: row;
+    gap: 2em;
+
+    .BapfImage {
+      width: 40%;
+    }
+  }
+}
+
+/* for mobile */
+@media (max-width: 479px) {
+  .ArtistProfile__pic {
+    // float: right;
+  }
+  .BapfImage {
+    width: 90vmax;
+    max-width: 90vmax;
+  }
+
+  .ArtistProfile__pic_right {
+    display: none;
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .BapfArticle {
+    // width: 90%;
+  }
+  #the-programme {
+    width: 60%;
+  }
+}
+
+/*
+  desktop layout
+*/
+@media (min-width: 767px) {
+  #the-programme {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin-top: 2em;
+    gap: 1em;
+    h3 {
+      font-size: 24pt;
+      text-align: right;
+      grid-column: 1;
+      width: 15em;
+      margin-top: -1em;
+      transform: translateX(5em);
+    }
+    ul {
+      border-left: 2px solid white;
+      grid-column: 2;
+      width: 25em;
+      margin-left: -3em;
+      padding-left: 1em;
+    }
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+}
+
+/* for desktop */
+@media (min-width: 479px) {
+  .ArtistProfile {
+    display: grid;
+    grid-template-columns: 15em auto;
+    column-gap: 3em;
+
+    h3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+  }
+  .ArtistProfile__pic {
+    max-width: 14em;
+    margin-left: -5em;
+    grid-column: 1;
+    align-self: auto;
+  }
+  .ArtistProfile__pic_right {
+    .BapfImage {
+      max-width: 15em;
+    }
+    float: right;
+
+    margin-left: 1em;
+    margin-right: -4em;
+    opacity: 0.9;
+  }
+  .BapfImage {
+    max-width: 20em;
+  }
+  .ArtistProfile__description {
+    display: block;
+    grid-column: 2;
+
+    p:nth-of-type(1) {
+      margin-block-start: 0px;
+    }
+  }
+}
+@media (min-width: 767px) {
+  #the-festival,
+  #the-history {
+    position: relative;
+    padding-left: 30em;
+    .BapfImage {
+      position: absolute;
+      top: 9em;
+      left: -12em;
+      max-width: 45em;
+      z-index: -1;
+    }
+    p {
+      background-color: @notblack-fade;
+    }
+  }
+}
+@media (min-width: 767px) {
+  .TheFestival__videothing {
+    margin-left: 3em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2em;
+    p {
+      font-style: italic;
+    }
+  }
+}
+/* for mobile */
+@media (max-width: 479px) {
+  #the-workshops {
+  }
+  .BapfImage {
+    width: 90vmax;
+    max-width: 90vmax;
+  }
+}
+/* for desktop */
+@media (min-width: 479px) {
+  #the-workshops {
+    display: grid;
+    grid-template-columns: 25em auto;
+    h2,
+    h3 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    p {
+      grid-column: 2;
+    }
+    & > .BapfImage {
+      grid-column: 1;
+      margin-left: -5em;
+      max-width: 25em;
+    }
+  }
+}
+/* for mobile */
+@media (max-width: 767px) {
+  .TheArt__masonry {
+    main {
+      // background-color: pink;
+      font-size: x-small !important;
+      word-wrap: break-word;
+      max-height: 30em;
+      .HeroQuote p {
+        font-size: 110pt;
+      }
+      .TheArt__hideonmobile {
+        display: none;
+      }
+    }
+  }
+}
+
+/* for mobile */
+@media (max-width: 767px) {
+  .TheArt__Roy {
+    // text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .BapfImage {
+      max-width: 90%;
+    }
+
+    p {
+      font-style: italic;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    // p:first-of-type {
+    //   grid-column: 2 !important;
+    // }
+    .BapfImage:nth-of-type(1), .BapfImage:nth-of-type(3), .BapfImage:nth-of-type(5), .BapfImage:nth-of-type(7), .BapfImage:nth-of-type(9), .BapfImage:nth-of-type(11) {
+      grid-column: 1;
+    }
+    .BapfImage:nth-of-type(1),.BapfImage:nth-of-type(2) {
+      grid-row: 2;
+    }
+    .BapfImage:nth-of-type(3),.BapfImage:nth-of-type(4) {
+      grid-row: 4;
+    }
+    .BapfImage:nth-of-type(5),.BapfImage:nth-of-type(6) {
+      grid-row: 6;
+    }
+    .BapfImage:nth-of-type(7),.BapfImage:nth-of-type(8) {
+      grid-row: 8;
+    }
+    .BapfImage:nth-of-type(9),.BapfImage:nth-of-type(10) {
+      grid-row: 10;
+    }
+    .BapfImage {
+      grid-column: 2;
+      justify-self: center;
+      //
+      max-width: 90%;
+      width: 90%;
+    }
+  }
+}
+/* for desktop */
+@media (min-width: 767px) {
+  .TheArt__Roy {
+    display: grid;
+    grid-template-columns: 15em auto 15em;
+    align-items: center;
+    gap: 2em;
+    row-gap: 3em;
+    .BapfImage {
+      max-width: 15em;
+    }
+    p {
+      font-style: italic;
+      grid-column: 2;
+    }
+  }
+  .TheArt__Roy__l {
+    grid-column: 1;
+  }
+  .TheArt__Roy__r {
+    grid-column: 3;
+  }
+}
+/* for mobile */
+@media (max-width: 767px) {
+  .TheArt__Patrick2025__others {
+    flex-direction: column;
+  }
+}

@@ -1,21 +1,6 @@
 @notblack: #1a1a1a;
 @notblack-fade: rgba(26, 26, 26, 0.5);
 
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a1a;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 a {
   font-weight: 500;
   color: #646cff;
@@ -25,54 +10,25 @@ a:hover {
   color: #535bf2;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
-}
-
-// h1 {
-//   font-size: 90pt;
-//   line-height: 1.1;
+// button {
+//   border-radius: 8px;
+//   border: 1px solid transparent;
+//   padding: 0.6em 1.2em;
+//   font-size: 1em;
+//   font-weight: 500;
+//   font-family: inherit;
+//   background-color: #1a1a1a;
+//   cursor: pointer;
+//   transition: border-color 0.25s;
 // }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-// @media (prefers-color-scheme: light) {
-//   :root {
-//     color: #213547;
-//     background-color: #ffffff;
-//   }
-//   a:hover {
-//     color: #747bff;
-//   }
-//   button {
-//     background-color: #f9f9f9;
-//   }
+// button:hover {
+//   border-color: #646cff;
 // }
-
-/*
-  my stuff
-*/
+// button:focus,
+// button:focus-visible {
+//   outline: 4px auto -webkit-focus-ring-color;
+// }
 
 @font-face {
   font-family: Inter;
@@ -104,6 +60,48 @@ button:focus-visible {
   src: url("./assets/caladea/caladea_bold.woff") format("woff");
 }
 
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #1a1a1a;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  display: grid;
+  justify-items: center;
+}
+#root {
+  padding: 2em;
+}
+
+// body {
+//   margin: 0;
+//   display: flex;
+//   place-items: center;
+//   // min-width: 320px; // TODO
+//   // min-height: 100vh; // TODO
+// }
+
+#root > main {
+  // background-color: #1a1a1a;
+  // background-color: rgba(0, 255, 0, 0.202);
+  color: white;
+  // display: flex;
+  // flex-direction: column;
+  text-align: center;
+  & > * > * {
+    text-align: initial;
+  }
+}
+
 header {
   display: flex;
   flex-direction: row;
@@ -117,47 +115,10 @@ header {
   }
 }
 
-nav {
-  display: contents;
-  ul {
-    justify-self: right;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 1em;
-    list-style: none;
-    a {
-      color: white;
-      font-weight: 700;
-    }
-  }
-}
-
-.BapfTopBar {
-  display: flex;
-}
-
-#root > main {
-  // background-color: #1a1a1a;
-  // background-color: rgba(0, 255, 0, 0.202);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-@media (min-width: 767px) {
-  #root > main {
-    width: 70em;
-  }
-}
-
-article {
-  width: inherit;
-}
 .BapfArticle {
   // nice spacing after articles
-  margin-top: 2em;
-  margin-bottom: 9em;
+  margin-top: 3em;
+  margin-bottom: 3em;
   // except for the last two, sponsors and contact details
   &:nth-last-of-type(1),
   &:nth-last-of-type(2) {
@@ -171,814 +132,146 @@ article {
   margin-bottom: 1em;
 }
 
-@media screen {
-  .BapfArticle__firstp {
-    margin-block-start: 0px;
-  }
-}
-
-/* for mobile */
-@media (max-width: 767px) {
-  .BapfArticle {
-    text-align: center;
-    p {
-      font-size: 24pt;
-      text-align: left;
-    }
-  }
-  /* bigger spaces between articles */
-  .BapfArticle {
-    margin-bottom: 12em;
-  }
-  h2,
-  h3 {
-    margin-top: 3em;
-  }
-}
-
-
-// h1,
-// h1 a,
-// .HeroQuote {
-//     -webkit-text-stroke: 1.5px white;
-//     color: transparent;
-//     transition: 0.5s color;
-//     text-transform: uppercase;
-// }
-
-h1,
-h2,
-h3,
-h4,
-h5 {
-  font-weight: 700;
-  font-family: "Caladea";
-  // color: transparent;
-  transition: 0.5s color;
-  text-transform: uppercase;
-  a {
-    color: @notblack;
-  }
-}
-
-h1:hover,
-h1:hover a,
-h2:hover,
-h2:hover a,
-h3:hover,
-h3:hover a,
-h4:hover,
-h4:hover a {
-  color: white;
-}
-
-.HeroQuote {
-  font-size: 130px;
-  text-align: center;
-  font-weight: 700;
-  font-family: "Caladea";
-  p {
-    text-align: center !important;
-  }
-}
-.HeroQuote__long p {
-  font-size: 70px !important;
-  // font-style: italic;
-  line-height: 100%;
-}
-
-h1,
-.HeroQuote {
-  font-size: 80pt;
-  text-align: center;
-  line-height: 1em;
-  -webkit-text-stroke: 1.5px white;
-  color: transparent;
-  &:hover strong {
-    -webkit-text-stroke-color: white;
-  }
-  strong {
-    -webkit-text-stroke: 1.5px @notblack;
-    color: white;
-  }
-}
-
-h2 {
-  font-size: 50pt;
-  margin-bottom: 0.5em;
-  -webkit-text-stroke: 1.5px white;
-  color: transparent;
-  &:hover strong {
-    -webkit-text-stroke-color: white;
-  }
-  strong {
-    -webkit-text-stroke: 1.5px @notblack;
-    color: white;
-  }
-  &::after {
-    content: ".";
-  }
-}
-/* for mobile */
-@media (max-width: 767px) {
-  h2 {
-    font-size: 80pt;
-  }
-}
-
-h3 {
-  font-size: 26pt;
-  -webkit-text-stroke: 1px white;
-  color: transparent;
-  &:hover strong {
-    -webkit-text-stroke-color: white;
-  }
-  strong {
-    -webkit-text-stroke: 0.5px @notblack;
-    color: white;
-  }
-  &::after {
-    content: ".";
-  }
-}
-/* for mobile */
-@media (max-width: 767px) {
-  h3 {
-    font-size: 40pt;
-  }
-}
-
-h4 {
-  -webkit-text-stroke: 0.25px white;
-  color: transparent;
-  &:hover strong {
-    -webkit-text-stroke-color: white;
-  }
-  strong {
-    // -webkit-text-stroke: 0.5px @notblack;
-    color: white;
-  }
-}
-
-h5 strong {
-  // -webkit-text-stroke: 1.5px @notblack;
-  color: white;
-}
-
-@media (max-width: 1120px) {
-  .HeroQuote {
-    font-size: 120px;
-  }
-}
-
-@media (max-width: 991px) {
-  .HeroQuote {
-    font-size: 80px;
-  }
-}
-
-@media (max-width: 767px) {
-  .HeroQuote {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 479px) {
-  .HeroQuote {
-    font-size: 56px;
-  }
-}
-
-.HeroQuote--medium {
-  font-size: 80px;
-  text-align: center;
-}
-
-@media (max-width: 1120px) {
-  .HeroQuote--medium {
-    font-size: 70px;
-  }
-}
-
-@media (max-width: 991px) {
-  .HeroQuote--medium {
-    font-size: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  .HeroQuote--medium {
-    font-size: 50px;
-  }
-}
-
-@media (max-width: 479px) {
-  .HeroQuote--medium {
-    font-size: 50px;
-  }
-}
-
-// .HeroQuote__1 {
-//     white-space: nowrap;
-// }
-
-// .HeroQuote__2 {
-//     white-space: nowrap;
-// }
-
-// .HeroQuote__3 {
-//     white-space: nowrap;
-// }
-
-.BapfImage {
-  max-width: 512px;
-  align-self: center;
-}
-.BapfImageFigure caption {
-  padding-left: 1em;
-  padding-right: 1em;
-  font-size: smaller;
-}
-
-.onlyVisibleToScreenReaders {
-  position: absolute;
-  left: -10000px;
-  top: auto;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-}
-
-.BapfHiddenHeading {
-  .onlyVisibleToScreenReaders();
-}
-.BapfMainPoster {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  .BapfImage {
-    width: 100%;
-    max-width: 800px;
-  }
+.TheFestival__videothing {
+  margin-left: 1em;
+  margin-right: 1em;
   margin-bottom: 2em;
-}
-
-/* for mobile */
-.BapfSecondaryPosters {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  // background-color: pink;
-  .BapfImage {
-    width: 100%;
-    max-width: 800px;
-  }
-}
-/* for desktop */
-@media (min-width: 767px) {
-  .BapfSecondaryPosters {
-    flex-direction: row;
-    gap: 2em;
-
-    .BapfImage {
-      width: 40%;
-    }
-  }
-}
-
-/*
-  general styling
-*/
-#the-programme {
-  h3 {
-    font-size: 24pt;
-  }
-  li {
-    list-style: none;
-  }
-}
-
-/* for mobile */
-@media (max-width: 479px) {
-  .ArtistProfile__pic {
-    // float: right;
-  }
-  .BapfImage {
-    width: 90vmax;
-    max-width: 90vmax;
-  }
-
-  .ArtistProfile__pic_right {
-    display: none;
-  }
-}
-
-/* for mobile */
-@media (max-width: 767px) {
-  .BapfArticle {
-    // width: 90%;
-  }
-  #the-programme {
-    width: 60%;
-  }
-}
-
-/*
-  desktop layout
-*/
-@media (min-width: 767px) {
-  #the-programme {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
-    margin-top: 2em;
-    gap: 1em;
-    h3 {
-      font-size: 24pt;
-      text-align: right;
-      grid-column: 1;
-      width: 15em;
-      margin-top: -1em;
-      transform: translateX(5em);
-    }
-    ul {
-      border-left: 2px solid white;
-      grid-column: 2;
-      width: 25em;
-      margin-left: -3em;
-      padding-left: 1em;
-    }
-    li {
-      margin-bottom: 0.5em;
-    }
-  }
-}
-
-/* for desktop */
-@media (min-width: 479px) {
-  .ArtistProfile {
-    display: grid;
-    grid-template-columns: 15em auto;
-    column-gap: 3em;
-
-    h3 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  }
-  .ArtistProfile__pic {
-    max-width: 14em;
-    margin-left: -5em;
-    grid-column: 1;
-    align-self: auto;
-  }
-  .ArtistProfile__pic_right {
-    .BapfImage {
-      max-width: 15em;
-    }
-    float: right;
-
-    margin-left: 1em;
-    margin-right: -4em;
-    opacity: 0.9;
-  }
-  .BapfImage {
-    max-width: 20em;
-  }
-  .ArtistProfile__description {
-    display: block;
-    grid-column: 2;
-
-    p:nth-of-type(1) {
-      margin-block-start: 0px;
-    }
-  }
-}
-
-.__image_row {
-  ul {
-    // background-color: green;
-    display: flex;
-    direction: row;
-    list-style: none;
-    gap: 1em;
-    padding: 0px;
-  }
-  figure {
-    margin: 0.25em;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  caption {
-    width: 100%;
-    font-size: small;
+  p {
     font-style: italic;
-    font-weight: 500;
-  }
-  .BapfImage {
-    max-width: 10em;
-  }
-}
-
-.BapfOtherArtists {
-  .__image_row();
-}
-
-@media (min-width: 767px) {
-  #the-festival,
-  #the-history {
-    position: relative;
-    padding-left: 30em;
-    .BapfImage {
-      position: absolute;
-      top: 9em;
-      left: -12em;
-      max-width: 45em;
-      z-index: -1;
-    }
-    p {
-      background-color: @notblack-fade;
-    }
-  }
-}
-@media (min-width: 767px) {
-  .TheFestival__videothing {
-    margin-left: 3em;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 2em;
-    p {
-      font-style: italic;
-    }
-  }
-}
-
-#the-venue {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  h2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-  main {
-    grid-column: 1;
-    grid-row: 2;
-  }
-  .TheVenueSidePictures {
-    grid-column: 2;
-    grid-row: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-    .BapfImage {
-      max-width: 25em;
-    }
-  }
-  .TheVenueOtherPictures {
-    .__image_row();
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row: 3;
-    .BapfImage {
-      max-width: 15em;
-    }
-  }
-}
-
-#the-sponsors {
-  ul {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1em;
-    list-style: none;
-
-    h3 {
-      color: white;
-      margin-bottom: 0px;
-    }
-    a {
-      color: white;
-    }
-  }
-}
-/* for mobile */
-@media (max-width: 479px) {
-  #the-workshops {
-  }
-  .BapfImage {
-    width: 90vmax;
-    max-width: 90vmax;
-  }
-}
-/* for desktop */
-@media (min-width: 479px) {
-  #the-workshops {
-    display: grid;
-    grid-template-columns: 25em auto;
-    h2,
-    h3 {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-    p {
-      grid-column: 2;
-    }
-    & > .BapfImage {
-      grid-column: 1;
-      margin-left: -5em;
-      max-width: 25em;
-    }
-  }
-}
-.WorkshopExtraPhotos {
-  .__image_row();
-  .BapfImage {
-    max-width: 10em !important;
-    max-height: 10em !important;
-  }
-}
-.TheArt__masonry {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1em;
-  align-items: center;
-  justify-items: center;
-
-  .BapfImage {
-    max-width: 100%;
-  }
-
-  main {
-    // background-color: blue;
-    margin-top: -10em !important;
-    margin-bottom: 3em !important;
-  }
-  .HeroQuote p {
-    margin-bottom: 0px;
-  }
-  // positioning things in the layout
-  .TheArt__l {
-    grid-column: 1;
-  }
-  .TheArt__m {
-    grid-column: 2;
-    margin-top: -5em;
-    margin-bottom: 5em;
-  }
-  .TheArt__r {
-    grid-column: 3;
-  }
-  .TheArt__row1 {
-    grid-row: 1;
-  }
-  .TheArt__row2 {
-    grid-row: 2;
-  }
-  .TheArt__row3 {
-    grid-row: 3;
-  }
-  .TheArt__row4 {
-    grid-row: 4;
-  }
-  .TheArt__row5 {
-    grid-row: 5;
-  }
-}
-
-.TheArt__masonry--2026 {
-  .TheArt__row1 {
-      align-self: end;
-  }
-  .TheArt__row2,.TheArt__row3 {
-      align-self: center;
-  }
-  .TheArt__m.TheArt__row2 {
-      grid-row-start: 2;
-      grid-row-end: 4;
-      margin-bottom: 0em;
-  }
-}
-
-/* for mobile */
-@media (max-width: 767px) {
-  .TheArt__masonry {
-    main {
-      // background-color: pink;
-      font-size: x-small !important;
-      word-wrap: break-word;
-      max-height: 30em;
-      .HeroQuote p {
-        font-size: 110pt;
-      }
-      .TheArt__hideonmobile {
-        display: none;
-      }
-    }
-  }
-}
-
-.TheArt__delugePoster {
-  // max-width: 50em;
-  width: calc(100% - 4em);
-  max-width: calc(100% - 4em);
-  padding: 2em;
-}
-
-#the-contact-details {
-  .Article__split {
-    display: flex;
-    flex-direction: row;
-    gap: 2em;
-  }
-  dl {
-    display: grid;
-  }
-  dt {
-    grid-column: 1;
-  }
-  dd {
-    grid-column: 2;
-  }
-  dd a {
-    display: table-cell;
-    color: white;
-    text-decoration: underline;
-  }
-}
-
-#bapf-2023,
-#bapf-2022 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2em;
-
-  h2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
   }
   iframe {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    justify-self: center;
+    width: 100%;
   }
-  .BapfImage {
-    max-width: 90%;
-  }
-}
-
-#bapf-arts {
-  .BapfImage {
-    max-width: 90%;
-    /* center it */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-.TheArt__Roy {
-    p {
-      position: relative;
-    }
-    p blockquote::before {
-      content: "〝";
-      position: absolute;
-      left: -0.6em;
-      top: -0.3em;
-      font-size: 50pt;
-    }
-
-    p blockquote::after {
-      content: "〞";
-      position: absolute;
-      right: 0em;
-      bottom: 0.6em;
-      font-size: 50pt;
-    }
-}
-
-.TheArt__RoyZetiskyHeroPic.BapfImage {
-  width: calc(100% - 4em);
-  max-width: calc(100% - 4em);
-  padding: 2em;
-}
-
-/* for mobile */
-@media (max-width: 767px) {
-  .TheArt__Roy {
-    // text-align: center;
+  @media screen and (min-width: 600px) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+}
 
-    .BapfImage {
-      max-width: 90%;
+@import "./styles/headings-and-heroquotes.less";
+@import "./styles/navbar.less";
+@import "./styles/images.less";
+@import "./styles/embeds.less";
+@import "./styles/the-programme.less";
+@import "./styles/the-art-masonry.less";
+@import "./styles/the-art-artists.less";
+@import "./styles/the-artists.less";
+@import "./styles/the-workshops.less";
+@import "./styles/the-venue.less";
+@import "./styles/the-history.less";
+@import "./styles/the-sponsors.less";
+@import "./styles/the-contact-details.less";
+@import "./styles/previous-years.less";
+
+@media screen and (orientation: landscape) {
+  // body {
+  //   // background-color: darkmagenta;
+  // }
+
+  #root {
+    max-width: 800px;
+    main {
+      max-width: 800px;
+      justify-self: center;
     }
+  }
+}
 
-    p {
-      font-style: italic;
+@media screen and (orientation: portrait) {
+  /*
+  ...
+  */
+
+  #root {
+    padding-top: 1em;
+    margin-top: 1em;
+  }
+  // body {
+  //   // background-color: darkcyan ;
+  // }
+
+  //
+
+  /*
+  ...
+  */
+}
+
+.__IGNORE__ {
+  // h1 {
+  //   font-size: 90pt;
+  //   line-height: 1.1;
+  // }
+
+  /*
+  my stuff
+*/
+
+  article {
+    width: inherit;
+  }
+
+  // h1,
+  // h1 a,
+  // .HeroQuote {
+  //     -webkit-text-stroke: 1.5px white;
+  //     color: transparent;
+  //     transition: 0.5s color;
+  //     text-transform: uppercase;
+  // }
+
+  /* for mobile */
+  /*
+  general styling
+*/
+
+  #the-venue {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    h2 {
       grid-column-start: 1;
       grid-column-end: 3;
     }
-    // p:first-of-type {
-    //   grid-column: 2 !important;
-    // }
-    .BapfImage:nth-of-type(1), .BapfImage:nth-of-type(3), .BapfImage:nth-of-type(5), .BapfImage:nth-of-type(7), .BapfImage:nth-of-type(9), .BapfImage:nth-of-type(11) {
+    main {
       grid-column: 1;
-    }
-    .BapfImage:nth-of-type(1),.BapfImage:nth-of-type(2) {
       grid-row: 2;
     }
-    .BapfImage:nth-of-type(3),.BapfImage:nth-of-type(4) {
-      grid-row: 4;
-    }
-    .BapfImage:nth-of-type(5),.BapfImage:nth-of-type(6) {
-      grid-row: 6;
-    }
-    .BapfImage:nth-of-type(7),.BapfImage:nth-of-type(8) {
-      grid-row: 8;
-    }
-    .BapfImage:nth-of-type(9),.BapfImage:nth-of-type(10) {
-      grid-row: 10;
-    }
-    .BapfImage {
+    .TheVenueSidePictures {
       grid-column: 2;
-      justify-self: center;
-      //
+      grid-row: 2;
+      display: flex;
+      flex-direction: column;
+      gap: 1em;
+      .BapfImage {
+        max-width: 25em;
+      }
+    }
+    .TheVenueOtherPictures {
+      .__image_row();
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row: 3;
+      .BapfImage {
+        max-width: 15em;
+      }
+    }
+  }
+
+  .TheArt__delugePoster {
+    // max-width: 50em;
+    width: calc(100% - 4em);
+    max-width: calc(100% - 4em);
+    padding: 2em;
+  }
+
+  #bapf-arts {
+    .BapfImage {
       max-width: 90%;
-      width: 90%;
+      /* center it */
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
     }
-  }
-}
-/* for desktop */
-@media (min-width: 767px) {
-  .TheArt__Roy {
-    display: grid;
-    grid-template-columns: 15em auto 15em;
-    align-items: center;
-    gap: 2em;
-    row-gap: 3em;
-    .BapfImage {
-      max-width: 15em;
-    }
-    p {
-      font-style: italic;
-      grid-column: 2;
-    }
-  }
-  .TheArt__Roy__l {
-    grid-column: 1;
-  }
-  .TheArt__Roy__r {
-    grid-column: 3;
-  }
-}
-
-.TheArt__Patrick2025 {
-  display: grid;
-  justify-items: center;
-}
-.TheArt__Patrick2025__hero {
-}
-.TheArt__Patrick2025__hero.BapfImage {
-  max-width: 60%;
-}
-.TheArt__Patrick2025__others {
-  display: flex;
-  gap: 2em;
-}
-
-.TheArt__Genevieve2026 {
-  display: grid;
-  justify-items: center;
-}
-.TheArt__Genevieve2026__hero {
-}
-.TheArt__Genevieve2026__hero.BapfImage {
-  max-width: 60%;
-}
-.TheArt__Genevieve2026__others {
-  display: flex;
-  gap: 2em;
-}
-
-
-.TheArt__Ajay2026 {
-  display: grid;
-  justify-items: center;
-}
-.TheArt__Ajay2026__hero {
-}
-.TheArt__Ajay2026__hero.BapfImage {
-  max-width: 60%;
-}
-.TheArt__Ajay2026__others {
-  display: flex;
-  gap: 2em;
-}
-
-/* for mobile */
-@media (max-width: 767px) {
-  .TheArt__Patrick2025__others {
-    flex-direction: column;
   }
 }

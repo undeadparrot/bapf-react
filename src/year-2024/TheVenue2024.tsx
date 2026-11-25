@@ -11,6 +11,9 @@ export function TheVenue2024() {
         </>
       }
     >
+      <aside className="TheVenueSidePictures">
+        <BapfImg imageInfo={IMAGES.Karoolkie1} />
+      </aside>
       <main>
         <p>
           The Karooljie Kelder is a Beautiful Wine Celler in the center of
@@ -40,9 +43,6 @@ export function TheVenue2024() {
           graham@bapf.co.za for inquiries.
         </p>
       </main>
-      <aside className="TheVenueSidePictures">
-        <BapfImg imageInfo={IMAGES.Karoolkie1} />
-      </aside>
       <aside className="TheVenueOtherPictures">
         {/* <p>We’ve played host to works by some of the finest photographic artists</p> */}
         <ul>

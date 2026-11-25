@@ -10,7 +10,7 @@ export function TheHistory2024() {
         </>
       }
     >
-      <BapfImg imageInfo={IMAGES.History1} />
+      <BapfImg imageInfo={IMAGES.History1} hasBorder />
       <p>
         In 2020 when Covid ravaged Graham Abbott’s beloved Barrydale village, he
         set out to build a world-class analog photography festival to boost

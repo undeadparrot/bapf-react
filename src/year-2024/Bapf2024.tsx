@@ -43,7 +43,7 @@ export function Bapf2024App() {
                 BAPF 2026
               </a>
             </li>
-            <li>
+            <li className="BapfNav__spacer">
               <span>|</span>
             </li>
             <li>
@@ -94,7 +94,7 @@ export function Bapf2024App() {
                 The Sponsors
               </a>
             </li> */}
-            <li>
+            <li className="BapfNav__spacer">
               <span>|</span>
             </li>
             <li>
@@ -112,7 +112,7 @@ export function Bapf2024App() {
         </nav>
       </div>
       <main id="main-content" data-exposehiddenheadings={exposeHiddenHeadings}>
-        <h1>
+        <h1 className="HeroQuote">
           The <strong>Barrydale</strong> <br />
           <strong>Analog</strong> Photo <br />
           Festival.
@@ -160,7 +160,7 @@ export function Bapf2024App() {
         </Article>
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Living in The Unknown</strong>.
         </HeroQuote>
@@ -244,7 +244,7 @@ export function Bapf2024App() {
         <TheWorkshops2024 />
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Emotion made Tangible</strong>.
         </HeroQuote>
@@ -266,7 +266,7 @@ export function Bapf2024App() {
 export function Bapf2024LookingBack() {
   return (
     <Article
-      articleId="bapf-2024-lookingback"
+      articleId="previously-bapf-2024"
       heading={
         <>
           Looking back at <strong>BAPF 2024</strong>

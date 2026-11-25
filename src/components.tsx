@@ -47,6 +47,7 @@ export type BapfImageProps = {
   className?: string;
   showCaption?: boolean;
   lightboxOnClick?: boolean;
+  hasBorder?: boolean;
 };
 export function BapfImg(props: BapfImageProps) {
   const [isOpen, setOpen] = useState(false);
@@ -68,10 +69,10 @@ export function BapfImg(props: BapfImageProps) {
             props.className && props.className,
           ])}>
         <img
-          className={classNames([
-            "BapfImage",
-            // props.className && props.className,
-          ])}
+          className={classNames({
+            "BapfImage": true,
+            "BapfImage--border": props.hasBorder,
+          })}
           src={props.imageInfo.filename}
           title={props.imageInfo.title}
           alt={props.imageInfo.description}
@@ -92,6 +93,7 @@ export function BapfImg(props: BapfImageProps) {
       <img
         className={classNames([
           "BapfImage",
+          props.hasBorder && "BapfImage--border",
           props.className && props.className,
         ])}
         src={props.imageInfo.filename}

@@ -1,0 +1,107 @@
+
+  .TheArt__RoyZetiskyHeroPic.BapfImage {
+    width: calc(100% - 4em);
+    max-width: calc(100% - 4em);
+    padding: 2em;
+  }
+
+  
+  .TheArt__Patrick2025,.TheArt__Ajay2026,.TheArt__Genevieve2026 {
+    display: grid;
+    justify-items: center;
+  }
+  .TheArt__Patrick2025,.TheArt__Ajay2026__others, .TheArt__Genevieve2026__others {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2em;
+  }
+
+
+.TheArt__Roy {
+  display: grid;
+  justify-items: center;
+  gap: 1em;
+
+  p {
+    position: relative;
+    text-align: justify;
+    padding-right: 1.5em;
+  }
+  p blockquote::before {
+    content: "〝";
+    position: absolute;
+    left: -0.5em;
+    top: -0.3em;
+    font-size: 50pt;
+  }
+
+  p blockquote::after {
+    content: "〞";
+    position: absolute;
+    right: -0.1em;
+    bottom: 0.0em;
+    font-size: 50pt;
+    line-height: 0;
+  }
+
+  @media (min-width: 500px) {
+    // text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .BapfImage {
+      width: calc(100% - 4em);
+      max-width: calc(100% - 4em);
+      padding: 2em;
+
+      grid-column: 2;
+      justify-self: center;
+    }
+
+    p {
+      font-style: italic;
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+
+    .BapfImage:nth-of-type(1), .BapfImage:nth-of-type(3), .BapfImage:nth-of-type(5), .BapfImage:nth-of-type(7), .BapfImage:nth-of-type(9), .BapfImage:nth-of-type(11) {
+      grid-column: 1;
+    }
+    .BapfImage:nth-of-type(1),.BapfImage:nth-of-type(2) {
+      grid-row: 2;
+    }
+    .BapfImage:nth-of-type(3),.BapfImage:nth-of-type(4) {
+      grid-row: 4;
+    }
+    .BapfImage:nth-of-type(5),.BapfImage:nth-of-type(6) {
+      grid-row: 6;
+    }
+    .BapfImage:nth-of-type(7),.BapfImage:nth-of-type(8) {
+      grid-row: 8;
+    }
+    .BapfImage:nth-of-type(9),.BapfImage:nth-of-type(10) {
+      grid-row: 10;
+    }
+    
+  }
+}
+
+.TheArt__Patrick2025__hero.BapfImage {
+    width: calc(100% - 4em);
+    max-width: calc(100% - 4em);
+    padding: 2em;
+}
+.TheArt__Patrick2025__others {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 2em;
+  @media screen and (min-width: 500px) {
+    flex-direction: row;
+    .BapfImage {
+      width: calc(50% - 4em);
+      max-width: calc(50% - 4em);
+    }
+  }
+}
+

@@ -45,6 +45,7 @@ function TheArt__Ajay2026() {
       </h3>
       <HeroQuote className="HeroQuote__long">
         <p>
+          <strong>Ajay Lalu</strong> presents <br />
           An <strong>Analogue</strong> Obsession <br />
           in a <strong>Digital</strong> World
         </p>
@@ -74,10 +75,10 @@ function TheArt__Ajay2026() {
 export function TheArt2026Masonry() {
   return (
     <div className="TheArt__masonry TheArt__masonry--2026">
-      <main className="TheArt__m TheArt__row1">
-        <HeroQuote>
+      <HeroQuote>
           The <strong>Art</strong>
-        </HeroQuote>
+      </HeroQuote>
+      <main>
         <p className="TheArt__hideonmobile">
           The Festival has on display some of the very best photographic pieces
           from South Africa’s highly talented analog photographers.

@@ -2,7 +2,12 @@ import { useState } from "react";
 import "../App.less";
 import { IMAGES } from "../images";
 import logo from "../assets/Logo.webp";
-import { HeroQuote, Article, BapfImg, strongifyFirstNWord } from "../components";
+import {
+  HeroQuote,
+  Article,
+  BapfImg,
+  strongifyFirstNWord,
+} from "../components";
 import { TheContactDetails2024 } from "../year-2024/TheContactDetails2024";
 import { TheVenue2024 } from "../year-2024/TheVenue2024";
 import { TheHistory2024 } from "../year-2024/TheHistory2024";
@@ -27,16 +32,16 @@ export function Bapf2026App() {
       <div className="BapfTopBar">
         <header>
           <img src={logo} className="BapfLogo" />
-          <span className="HeroQuote">BAPF.</span>
+          <a href="#" className="HeroQuote">BAPF.</a>
         </header>
         <nav>
           <ul>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-programme"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                2026 Programme
+                Programme
               </a>
             </li>
             {/* <li>
@@ -47,36 +52,36 @@ export function Bapf2026App() {
                 The Speakers
               </a>
             </li> */}
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-workshops"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Workshops
+                Workshops
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-venue"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Venue
+                Venue
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only BapfNav--screenreaders-only">
               <a
                 href="#the-history"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The History
+                History
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <a
                 href="#the-sponsors"
                 onClick={() => setExposeHiddenHeadings(true)}
               >
-                The Sponsors
+                Sponsors
               </a>
             </li>
             <li>
@@ -89,7 +94,7 @@ export function Bapf2026App() {
                 BAPF 2024
               </a>
             </li>
-            <li>
+            <li className="BapfNav--landscape-only">
               <span>|</span>
             </li>
             <li>
@@ -107,64 +112,16 @@ export function Bapf2026App() {
         </nav>
       </div>
       <main id="main-content" data-exposehiddenheadings={exposeHiddenHeadings}>
-        <h1>
+        <h1 className="HeroQuote">
           The <strong>Barrydale</strong> <br />
           <strong>Analog</strong> Photo <br />
           Festival.
         </h1>
         <div className="BapfMainPoster">
-          <BapfImg imageInfo={IMAGES.bapf2026Poster2} />
+          <BapfImg imageInfo={IMAGES.bapf2026Poster2} hasBorder />
           {/* <BapfImg imageInfo={IMAGES.Bapf2025PosterProgramme} /> */}
         </div>
-        {/* <div className="BapfSecondaryPosters">
-          <BapfImg
-            imageInfo={IMAGES.Bapf2025GoldblattPosterJpeg}
-            className="BapfMainPoster"
-          />
-          <BapfImg imageInfo={IMAGES.Bapf2025SeanWilsonPosterImmortalimpressionsJpeg} className="BapfMainPoster" />
-        </div>
-        <div className="BapfSecondaryPosters">
-          <BapfImg
-            imageInfo={IMAGES.Bapf2025RoyZetiskyPosterBackinthedayJpeg}
-            className="BapfMainPoster"
-          />
-          <BapfImg
-            imageInfo={IMAGES.Bapf2025RoyZetiskyPosterWildJpeg}
-            className="BapfMainPoster"
-          />
-        </div>
-        <div className="BapfSecondaryPosters">
-          <BapfImg
-            imageInfo={IMAGES.Bapf2025RodgerBoschPosterJpeg}
-            className="BapfMainPoster"
-          />
-          <BapfImg imageInfo={IMAGES.Bapf2025HermanVanWykPosterJpeg} className="BapfMainPoster" />
-        </div>
 
-        <div className="BapfSecondaryPosters">
-          <BapfImg
-            imageInfo={IMAGES.Bapf2025PosterJillianEdelstein}
-            className="BapfMainPoster"
-          />
-          <BapfImg imageInfo={IMAGES.Bapf2025PosterDrum} className="BapfMainPoster" />
-        </div> */}
-
-        {/* <HeroQuote>
-          Soon we will <strong>unveil</strong>
-          <br />a new year of <strong>analog</strong>.
-        </HeroQuote> */}
-        {/* <Article
-          articleId="admonishment"
-          heading={
-            <>
-              Coming <strong>Soon</strong>
-            </>
-          }
-          // hideHeading
-        >
-          <p>We are getting ready to unveil the new programme for BAPF 2026. <br/>Please check back soon.</p>
-        </Article> */}
- 
         <Article
           articleId="the-programme"
           heading={
@@ -184,10 +141,10 @@ export function Bapf2026App() {
               </ul>
             </>
           ))}
-        </Article> 
+        </Article>
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Living in The Unknown</strong>.
         </HeroQuote>
@@ -201,24 +158,25 @@ export function Bapf2026App() {
           }
         >
           <p>
-            Now in its <strong>7th year</strong>, the Barrydale Analog Photography Festival
-            (BAPF) returns this December for a week-long celebration of pure
-            analog image-making in one of South Africa’s most character-filled
-            towns – Barrydale, nestled between mountain and desert.
+            Now in its <strong>7th year</strong>, the Barrydale Analog
+            Photography Festival (BAPF) returns this December for a week-long
+            celebration of pure analog image-making in one of South Africa’s
+            most character-filled towns – Barrydale, nestled between mountain
+            and desert.
           </p>
           <p>
             From its humble beginnings in 2020, BAPF has grown into a{" "}
             <strong>major showcase of film photography</strong>, proudly hosting
             some of the most respected names in South African photography,
-            including Tony Meintjes, Ajay Lalu, 
-            Obie Oberholzer, Josie Borain,  Guy Tillim, Gavin Furlonger, 
-            Dennis Da Silva, Tim Hopwood, Tiaan van Deventer, Derek Gripper, Luke Kammies, Noaln Lister, Herman Van Wyk and Graham
-            Abbott who had opened their own exhibitions, Here a list of some of
-            the other famous photographers we have have exhibitions held over
-            the years Roger Ballen, David Goldbladt, Jurgen Schadenberg, All
-            Drum magazine photographers, Billy Monk, Paul Wineberg, Rashied
-            Lombard, Gerda Genus, Robert Koen, Roy Zetisky, Johan Wilke, John
-            Hog, Rodger Bosch, Paul Alberts, to name a few.
+            including Tony Meintjes, Ajay Lalu, Obie Oberholzer, Josie Borain,
+            Guy Tillim, Gavin Furlonger, Dennis Da Silva, Tim Hopwood, Tiaan van
+            Deventer, Derek Gripper, Luke Kammies, Noaln Lister, Herman Van Wyk
+            and Graham Abbott who had opened their own exhibitions, Here a list
+            of some of the other famous photographers we have have exhibitions
+            held over the years Roger Ballen, David Goldbladt, Jurgen
+            Schadenberg, All Drum magazine photographers, Billy Monk, Paul
+            Wineberg, Rashied Lombard, Gerda Genus, Robert Koen, Roy Zetisky,
+            Johan Wilke, John Hog, Rodger Bosch, Paul Alberts, to name a few.
           </p>
           <p>
             This year’s festival runs from <strong>Friday 11</strong> to{" "}
@@ -263,6 +221,7 @@ export function Bapf2026App() {
               held from the 9-19 Dec 2022
             </p>
             <iframe
+              className="BapfYoutubePlayer"
               width="370"
               height="210"
               src="https://www.youtube.com/embed/DVz3zDPj0NA?si=4sjCgzGRzfGg2GH3"
@@ -273,20 +232,20 @@ export function Bapf2026App() {
               allowfullscreen
             ></iframe>
           </aside>
-          <BapfImg imageInfo={IMAGES.TheCellerShoot1} />
+        <BapfImg imageInfo={IMAGES.TheCellerShoot1} hasBorder/>
         </Article>
         <CommunityAndYouth2026 />
         <ClosingCelebration2026 />
         <TheSponsors2026 />
-        <TheArt2026 />
         <ContributingArt />
+        <TheArt2026 />
         {/* <TheSpeakers2024 /> */}
         <TheArtists2026 />
 
         <TheWorkshops2026 />
 
         <HeroQuote>
-          Analog Is
+          Analog is
           <br />
           <strong>Emotion made Tangible</strong>.
         </HeroQuote>

@@ -12,28 +12,32 @@ export function TheWorkshops2026() {
       }
     >
       <h3>
-            <strong>Wetplate</strong> Workshop
-          </h3>
-          <BapfImg imageInfo={IMAGES.WetplateWorkshop1} lightboxOnClick />
-          <p className="BapfArticle__firstp">
-            Graham Abbott previously hosted the Wetplate workshop over two days
-            at The Studio Barn in Barrydale. The history and theory of wetplate
-            photography and two other films: “Silver and Light” and “Remains of
-            the Day” were shown on day one. On day two the students had a chance
-            to photograph each other, creating a wetplate glass negative and
-            making a positive cyanotype print off their negatives.
-          </p>
-          <h3>
-            <strong>Analog</strong> Workshop
-          </h3>
-          <BapfImg imageInfo={IMAGES.AnalogWorkshop1} lightboxOnClick />
-          <p className="BapfArticle__firstp">
-            Graham and David Chamberlain hosted the analog photography darkroom
-            processing and printing workshop at the Studio Barn. The workshop
-            guided students through the black & white process of 35mm and 4×5“
-            film and the printing of 35 and medium format negatives onto fiber
-            based photographic paper.
-          </p>
+        <strong>Wetplate</strong> Workshop
+      </h3>
+      <div className="BapfWorkshops__firstimageandtext">
+        <BapfImg imageInfo={IMAGES.WetplateWorkshop1} lightboxOnClick />
+        <p className="BapfArticle__firstp">
+          Graham Abbott previously hosted the Wetplate workshop over two days at
+          The Studio Barn in Barrydale. The history and theory of wetplate
+          photography and two other films: “Silver and Light” and “Remains of
+          the Day” were shown on day one. On day two the students had a chance
+          to photograph each other, creating a wetplate glass negative and
+          making a positive cyanotype print off their negatives.
+        </p>
+      </div>
+      <h3>
+        <strong>Analog</strong> Workshop
+      </h3>
+      <div className="BapfWorkshops__firstimageandtext">
+        <BapfImg imageInfo={IMAGES.AnalogWorkshop1} lightboxOnClick />
+        <p className="BapfArticle__firstp">
+          Graham and David Chamberlain hosted the analog photography darkroom
+          processing and printing workshop at the Studio Barn. The workshop
+          guided students through the black & white process of 35mm and 4×5“
+          film and the printing of 35 and medium format negatives onto fiber
+          based photographic paper.
+        </p>
+      </div>
       {/* <h3>
         <strong>Wetplate</strong> Workshop
       </h3>
@@ -95,17 +99,19 @@ export function TheWorkshops2026() {
       <h3>
         <strong>Dryplate</strong> Workshop
       </h3>
-      <BapfImg imageInfo={IMAGES.DryplatePoster2024} lightboxOnClick />
-      <div>
-        <p className="BapfArticle__firstp">
-          Nikolai Nielsen will be demonstrating the historical dryplate coating
-          process, and teaching a workshop on how to shoot, process and print
-          your dryplate. Either glass plates or acetate film will be coated with
-          a photographic emulsion made to his own recipe. Experience photography
-          like it's the 1880s!
-        </p>
 
-        <p className="BapfArticle__firstp">
+      <div className="BapfWorkshops__firstimageandtext">
+        <BapfImg imageInfo={IMAGES.DryplatePoster2024} lightboxOnClick />
+      <p className="BapfArticle__firstp">
+        Nikolai Nielsen will be demonstrating the historical dryplate coating
+        process, and teaching a workshop on how to shoot, process and print your
+        dryplate. Either glass plates or acetate film will be coated with a
+        photographic emulsion made to his own recipe. Experience photography
+        like it's the 1880s!
+      </p>
+      </div>
+      <div>
+        <p>
           Dryplates are an early ancestor of the film we use today, where
           gelatin is made sensitive to light and coated onto glass plates, metal
           or paper, then left to dry before use. The coated plates can be
@@ -113,11 +119,11 @@ export function TheWorkshops2026() {
           resulting negative can then be printed.
         </p>
 
-        <p className="BapfArticle__firstp">
+        <p>
           All equipment will be provided, but you are welcome to bring your own
           camera and its format may be accommodated.
         </p>
-        <p className="BapfArticle__firstp">
+        <p>
           Contact Nikolai by phone or WhatsApp on <strong>0641404128</strong> .
         </p>
 
@@ -157,32 +163,33 @@ export function TheWorkshops2026() {
       <h3>
         <strong>X-Ray Reversal</strong> Workshop
       </h3>
-      <BapfImg imageInfo={IMAGES.XrayPoster2024} lightboxOnClick />
+      <div className="BapfWorkshops__firstimageandtext">
+        <BapfImg imageInfo={IMAGES.XrayPoster2024} lightboxOnClick />
+      </div>
+      <p className="BapfArticle__firstp">
+        Shoot and process x-ray sheet film into positive slides. This tricky
+        process is made easier by newer and safer chemistry, and you'll have a
+        large format slide to show for it.
+      </p>
       <div>
-        <p className="BapfArticle__firstp">
-          Shoot and process x-ray sheet film into positive slides. This tricky
-          process is made easier by newer and safer chemistry, and you'll have a
-          large format slide to show for it.
-        </p>
-
-        <p className="BapfArticle__firstp">
+        <p>
           The images will be shot on x-ray sheet film, which is orthochromatic
           and roughly 50 ISO. Large format view cameras will be used, and you
           will get a brief tutorial on how to use these challenging technical
           cameras.
         </p>
 
-        <p className="BapfArticle__firstp">
+        <p>
           Kits, for home processing of black-and-white film into positives, will
           be available for purchase at the event and afterwards. Contact us for
           more information on which films work best for reversal.
         </p>
 
-        <p className="BapfArticle__firstp">
+        <p>
           All equipment will be provided, but you are welcome to bring your own
           camera and if it can use film holders of any size up to 5x7.
         </p>
-        <p className="BapfArticle__firstp">
+        <p>
           Contact Nikolai by phone or WhatsApp on <strong>0641404128</strong> .
         </p>
 

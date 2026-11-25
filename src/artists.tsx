@@ -121,10 +121,10 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     image2: IMAGES.SeanWilsonSquare,
     description: (
       <>
-        <BapfImg
+        {/* <BapfImg
           imageInfo={IMAGES.seanWithViewCameraJpg}
           className="ArtistProfile__pic_right"
-        />
+        /> */}
         <p>
           Sean Wilson is a Cape Town based photographer who works primarily, but
           not exclusively, with analogue photographic processes. Over the last

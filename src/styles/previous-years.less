@@ -1,0 +1,24 @@
+
+  #previously-bapf-2023,
+  #previously-bapf-2022 {
+    display: grid;
+    row-gap: 2em;
+    grid-template-columns: repeat(1, 1fr);
+    @media screen and (min-width: 500px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    h2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+    }
+    iframe {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      justify-self: center;
+    }
+    .BapfImage {
+        width: 90%;
+        max-width: 800px;
+    }
+  }

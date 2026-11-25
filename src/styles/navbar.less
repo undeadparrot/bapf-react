@@ -1,0 +1,98 @@
+nav {
+  a,
+  a:visited {
+    color: white;
+    font-weight: 700;
+  }
+  ul {
+    list-style: none;
+    padding-left: 0px;
+  }
+  
+}
+
+.BapfTopBar {
+    display: flex;
+    gap: 2em;
+}
+
+.BapfNav--screenreaders-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  @media screen {
+    display: none;
+  }
+}
+
+@keyframes navbar-slide-down {
+    from {
+        // transform: translateY(-150%);
+        opacity: 0;
+    }
+    to {
+        // transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.BapfTopBar {
+    background-color: @notblack;
+    box-shadow: @notblack 0px 0px 15px 5px;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 0px;
+    justify-content: center;
+}
+
+@media screen and (orientation: portrait) {
+  nav {
+    display: contents;
+    
+    font-size: small;
+
+    ul {
+      justify-self: right;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1em;
+    }
+    .BapfNav--landscape-only {
+      display: none;
+    }
+  }
+    .BapfTopBar {
+        left: 0px;
+        right: 0px;
+        padding-left: 1em;
+        padding-right: 1em;
+        height: 3em;
+        // margin-bottom: -5em;
+        .BapfLogo {
+            height: 3em;
+        }
+
+
+        position: fixed;
+        animation: navbar-slide-down auto linear both;
+        animation-timeline: scroll();
+        animation-range: 0px 150px;
+    }
+}
+
+@media screen and (orientation: landscape) {
+  nav {
+    display: contents;
+    ul {
+      justify-self: right;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1em;
+    }
+  }
+}

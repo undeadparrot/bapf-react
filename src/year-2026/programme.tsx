@@ -2,14 +2,14 @@ import { ProgrammeDay } from "../year-2024/programme";
 
 export const PROGRAMME: ProgrammeDay[] = [
   {
-    title: "11 Dec (Fri)",
+    title: "11 Dec (Friday)",
     features: [
       "6:00 PM | Tony Meintjes Opening Talk | Karoolkie Kelder Gallery, 23 Bain Street",
       "(...) | Nikolai Nielsen presents The History of Capturing Light | Karoolkie Kelder Gallery, 23 Bain Street"
     ],
   },
   {
-    title: "12 Dec (Sat)",
+    title: "12 Dec (Saturday)",
     features: [
       // "12:00 PM | Roy Zetisky: Wild at Art - Digital Exhibition | Info Hub / Tourism Centre, 1 Van Riebeeck St | Digital Photos",
       // "(morning) Photo workshops at the Karoolkie Kelder venue",
@@ -18,14 +18,14 @@ export const PROGRAMME: ProgrammeDay[] = [
     ],
   },
   {
-    title: "13 Dec (Sun)",
+    title: "13 Dec (Sunday)",
     features: [
       "All Day | Workshops in Darkroom",
       "2:00 PM | Barrydale town photo walk",
     ],
   },
   {
-    title: "14 Dec (Mon)",
+    title: "14 Dec (Monday)",
     features: [
       "12:00 PM | Darkroom processing workshop",
       "7:00 PM | Demonstration | Karoolkie Kelder Gallery",
@@ -52,13 +52,13 @@ export const PROGRAMME: ProgrammeDay[] = [
     ],
   },
   {
-    title: "18 Dec (Fri)",
+    title: "18 Dec (Friday)",
     features: [
       "7:00 PM (TBC) | Live performance | Karoolkie Kelder Gallery | Tickets R150",
     ],
   },
   {
-    title: "19 Dec (Sat)",
+    title: "19 Dec (Saturday)",
     features: [
       "10:00 AM - 2:00 PM | Photography critique workshop led by noted artist (to be confirmed)",
       "(Closing Day)",

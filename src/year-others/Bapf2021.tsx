@@ -2,7 +2,7 @@ import { Article } from "../components";
 export function Bapf2021() {
   return (
     <Article
-      articleId="bapf-2021"
+      articleId="previously-bapf-2021"
       heading={
         <>
           Looking back at <strong>BAPF 2021</strong>
@@ -10,6 +10,7 @@ export function Bapf2021() {
       }
     >
       <iframe
+        className="BapfYoutubePlayer"
         width="840"
         height="470"
         src="https://www.youtube.com/embed/DVz3zDPj0NA?si=4sjCgzGRzfGg2GH3"
