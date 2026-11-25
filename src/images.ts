@@ -146,7 +146,8 @@ import Bapf2025ArtPatrickdemervelacNude2Jpeg from "./assets/bapf-2025-art-patric
 import Bapf2025ArtPatrickdemervelacNude1Jpeg from "./assets/bapf-2025-art-patrickdemervelac-nude-1.jpeg";
 
 import Bapf2026Poster1Jpg from "./assets/bapf-2026-poster-1.jpg";
-import Bapf2026Poster2Jpg from "./assets/bapf-2026-poster-2.png";
+import Bapf2026Poster2Png from "./assets/bapf-2026-poster-2.png";
+import Bapf2026Poster3Png from "./assets/bapf-2026-poster-3.png";
 import tonyMeintjesSquarePng from "./assets/tony-meintjes-square.png";
 import tonyMeintjesPng from "./assets/tony-meintjes.png";
 import ajayLaluSquarePng from "./assets/ajay-lalu-square.png";
@@ -169,6 +170,12 @@ import bapf2026ArtAjay4Png from "./assets/bapf-2026-art-ajay-4.jpeg"
 import bapf2026ArtGenevieveBolognaVdbJpg from './assets/bapf2026-art-genevieve-bologna-vdb.jpg'; 
 import bapf2026ArtGenevieveGirasoleCyanoJpg from './assets/bapf2026-art-genevieve-girasole-cyano.jpg'; 
 import bapf2026ArtGenevieveSanitanapoliSaltprintJpg from './assets/bapf2026-art-genevieve-sanitanapoli-saltprint.jpg';
+
+import alastairSquareJpeg from "./assets/alastair-square.jpeg";
+import bapf2026ArtAlastair1ExitJpeg from "./assets/bapf-2026-art-alastair-1.jpeg";
+import bapf2026ArtAlastair2StartJpeg from "./assets/bapf-2026-art-alastair-2.jpeg";
+import bapf2026ArtAlastair3Jpeg from "./assets/bapf-2026-art-alastair-3.jpeg";
+import bapf2026ArtAlastair4WreckJpeg from "./assets/bapf-2026-art-alastair-4.jpeg";
 
 
 export type BapfImageInfo = {
@@ -1007,9 +1014,13 @@ export const IMAGES = {
     title: "Festival Poster",
     description: "Festival poster from Barrydale Analog Photo Festival 2026",
   },
-
   bapf2026Poster2: {
-    filename: Bapf2026Poster2Jpg,
+    filename: Bapf2026Poster2Png,
+    title: "Festival Poster",
+    description: "Festival poster from Barrydale Analog Photo Festival 2026",
+  },
+  bapf2026Poster3: {
+    filename: Bapf2026Poster3Png,
     title: "Festival Poster",
     description: "Festival poster from Barrydale Analog Photo Festival 2026",
   },
@@ -1089,5 +1100,33 @@ export const IMAGES = {
     title: "Salt print by Genevieve Maynard",
     description: "Salt print by Genevieve Maynard exhibited at BAPF 2026",
   },
+
+  alastairSquareJpeg: {
+    filename: alastairSquareJpeg,
+    title: "Portrait of Alastair McLachlan",
+    description: "Portrait of Alastair McLachlan ©️ Copyright Alastair McLachlan"
+  },
+
+  bapf2026ArtAlastair1Exit: {
+    filename: bapf2026ArtAlastair1ExitJpeg,
+    title: "Photo by Alastair McLachlan",
+    description: "Photo by Alastair McLachlan ©️ Copyright Alastair McLachlan",
+  },
+  bapf2026ArtAlastair2Start: {
+    filename: bapf2026ArtAlastair2StartJpeg,
+    title: "Photo by Alastair McLachlan",
+    description: "Photo by Alastair McLachlan ©️ Copyright Alastair McLachlan",
+  },
+  bapf2026ArtAlastair3: {
+    filename: bapf2026ArtAlastair3Jpeg,
+    title: "Photo by Alastair McLachlan",
+    description: "Photo by Alastair McLachlan ©️ Copyright Alastair McLachlan",
+  },
+  bapf2026ArtAlastair4Wreck: {
+    filename: bapf2026ArtAlastair4WreckJpeg,
+    title: "Photo by Alastair McLachlan",
+    description: "Photo by Alastair McLachlan ©️ Copyright Alastair McLachlan",
+  },
+  
   
 };

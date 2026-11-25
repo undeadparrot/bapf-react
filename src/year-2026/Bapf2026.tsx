@@ -117,9 +117,9 @@ export function Bapf2026App() {
           <strong>Analog</strong> Photo <br />
           Festival.
         </h1>
-        <div className="BapfMainPoster">
+        <div className="BapfMainPoster BapfMainPoster--double">
           <BapfImg imageInfo={IMAGES.bapf2026Poster2} hasBorder />
-          {/* <BapfImg imageInfo={IMAGES.Bapf2025PosterProgramme} /> */}
+          <BapfImg imageInfo={IMAGES.bapf2026Poster3} hasBorder />
         </div>
 
         <Article

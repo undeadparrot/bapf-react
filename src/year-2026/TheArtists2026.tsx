@@ -85,6 +85,10 @@ export function TheArtists2026() {
         artist={ARTISTS.genevieveMaynard}
       />
       <ArtistProfileWidget
+        key={ARTISTS.AlastairMclachlan.name}
+        artist={ARTISTS.AlastairMclachlan}
+      />
+      <ArtistProfileWidget
         key={ARTISTS.sean.name}
         artist={ARTISTS.sean}
       />

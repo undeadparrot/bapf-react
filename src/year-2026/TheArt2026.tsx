@@ -71,6 +71,64 @@ function TheArt__Ajay2026() {
     </>
   );
 }
+function TheArt__Alastair2026() {
+  return (
+    <>
+      <h3 className="BapfHiddenHeading">
+        Genevieve <strong>Maynard</strong>
+      </h3>
+      <HeroQuote className="HeroQuote__long">
+        <p>
+          <strong>“TICKETS”</strong> <br />
+          <strong>DRIVE-IN-RY</strong> by <br />
+          <strong>Alastair McLachlan</strong>
+        </p>
+      </HeroQuote>
+      <div className="TheArt__Alastair2026">
+        <BapfImg
+          className="TheArt__Alastair2026__hero"
+          imageInfo={IMAGES.bapf2026ArtAlastair2Start}
+          lightboxOnClick
+        />
+        <br />
+        
+        <div>
+          <p>Alastair McLachlan’s exhibition explores South Africa’s forgotten Drive-ins, once symbols of freedom, adventure and imagination, now slowly fading into history. Through haunting images of decay and neglect, the work reflects on memory, nostalgia and the disappearance of these unique cultural spaces.</p>
+
+          <p>Drawn to the beauty of abandonment and the slow decay of these once vibrant places, McLachlan revisits the forgotten landscapes of South Africa’s Drive-ins, uncovering their stories and the magic that remains in their ruins.</p>
+
+          <p>The exhibition presents a collection of alternative photographic printing processes alongside traditional silver gelatin prints, adding texture, depth and a timeless quality to these evocative images.</p>
+
+          <p>Exhibition opening:and talk Friday, 11 December 2026, at 8 pm</p>
+        </div>
+        <div className="TheArt__Alastair2026__others">
+          <BapfImg
+            imageInfo={IMAGES.bapf2026ArtAlastair3}
+            lightboxOnClick
+          />
+          <BapfImg
+            imageInfo={IMAGES.bapf2026ArtAlastair4Wreck}
+            lightboxOnClick
+          />
+          </div>
+          <br />
+          <HeroQuote className="HeroQuote__long">
+            <p>
+              I like my <strong>pictures</strong> to <strong>tell stories</strong>, to reach <strong>beyond the “document”</strong>, to seek an <strong>imagined truth</strong> in acts of meditation.
+            </p>
+          </HeroQuote>
+          <br />
+
+        <BapfImg
+          className="TheArt__Alastair2026__hero"
+          imageInfo={IMAGES.bapf2026ArtAlastair1Exit}
+          lightboxOnClick
+        />
+      </div>
+    </>
+  );
+}
+
 
 export function TheArt2026Masonry() {
   return (
@@ -157,6 +215,8 @@ export function TheArt2026() {
       <br />
       <TheArt__Ajay2026 />
       <br />
+      <br />
+      <TheArt__Alastair2026 />
       <br />
       <br />
       <HeroQuote className="HeroQuote__long">

@@ -15,13 +15,28 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     image2: IMAGES.TonyMeintjes,
     description: (
       <>
-        <p>Tony Meintjes is a dedicated photographer and printer based in the coastal village of Kommetjie, Cape Town. Since 2005, Tony made a significant shift away from commercial photography to focus on inkjet printing and his personal work. This transition marked the beginning of a deep and evolving engagement with the craft of printing.</p>
-        <p>Over the years, he has slowly expanded his practice beyond inkjet techniques to include photochemical and direct-to-plate processes. His commitment to these traditional and contemporary printing methods reflects his passion for preserving the integrity and rich history of photographic print.</p>
         <p>
-          You can find out more about Tony on <a href="https://www.instagram.com/tonymeintjes/">Instagram</a> and get in contact about printing through <a href="https://slowprint.co.za/">his business</a>.
+          Tony Meintjes is a dedicated photographer and printer based in the
+          coastal village of Kommetjie, Cape Town. Since 2005, Tony made a
+          significant shift away from commercial photography to focus on inkjet
+          printing and his personal work. This transition marked the beginning
+          of a deep and evolving engagement with the craft of printing.
+        </p>
+        <p>
+          Over the years, he has slowly expanded his practice beyond inkjet
+          techniques to include photochemical and direct-to-plate processes. His
+          commitment to these traditional and contemporary printing methods
+          reflects his passion for preserving the integrity and rich history of
+          photographic print.
+        </p>
+        <p>
+          You can find out more about Tony on{" "}
+          <a href="https://www.instagram.com/tonymeintjes/">Instagram</a> and
+          get in contact about printing through{" "}
+          <a href="https://slowprint.co.za/">his business</a>.
         </p>
       </>
-    )
+    ),
   },
   ajayLalu: {
     name: "Ajay Lalu",
@@ -29,15 +44,46 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     image2: IMAGES.AjayLalu,
     description: (
       <>
-      <p>Ajay Lalu is a Cape Town based photographer, visual artist and author of A Mountain Divides. A Chartered Accountant by profession, his documentary photography explores dignity, identity, belonging and the lives of people whose stories are too often overlooked. His work has been exhibited internationally, including in Italy, the United Kingdom and the United States.</p>
-<p>His return to analogue photography began four years ago at the Barrydale Analogue Photo Festival, where Graham Abbot inspired him to pick up film again. This talk is also a tribute to Graham, whose enthusiasm sparked a renewed passion that continues to shape Ajay’s photographic journey.</p>
-<p>In An Analogue Obsession in a Digital World, Ajay shares how that inspiration grew into an obsession with collecting and using cameras, taking them on journeys to Edinburgh and Germany. He explores why HOME, his long term documentary project on migration, memory and belonging, is deliberately photographed on Hasselblad 6×6 film, while Working Class, his exploration of labour and dignity, is photographed largely digitally to capture the fleeting moments of life on the street.</p>
-<p>Through personal stories and photographs, Ajay reflects on the people who inspire us, the cameras we become attached to, and how we choose to tell the stories that matter.</p>
         <p>
-          You can keep up with Ajay on <a href="https://www.instagram.com/ajay_lalu_photography/">Instagram</a> and check out his photography on his <a href="https://www.lalu.co.za/">personal website</a>.
+          Ajay Lalu is a Cape Town based photographer, visual artist and author
+          of A Mountain Divides. A Chartered Accountant by profession, his
+          documentary photography explores dignity, identity, belonging and the
+          lives of people whose stories are too often overlooked. His work has
+          been exhibited internationally, including in Italy, the United Kingdom
+          and the United States.
+        </p>
+        <p>
+          His return to analogue photography began four years ago at the
+          Barrydale Analogue Photo Festival, where Graham Abbot inspired him to
+          pick up film again. This talk is also a tribute to Graham, whose
+          enthusiasm sparked a renewed passion that continues to shape Ajay’s
+          photographic journey.
+        </p>
+        <p>
+          In An Analogue Obsession in a Digital World, Ajay shares how that
+          inspiration grew into an obsession with collecting and using cameras,
+          taking them on journeys to Edinburgh and Germany. He explores why
+          HOME, his long term documentary project on migration, memory and
+          belonging, is deliberately photographed on Hasselblad 6×6 film, while
+          Working Class, his exploration of labour and dignity, is photographed
+          largely digitally to capture the fleeting moments of life on the
+          street.
+        </p>
+        <p>
+          Through personal stories and photographs, Ajay reflects on the people
+          who inspire us, the cameras we become attached to, and how we choose
+          to tell the stories that matter.
+        </p>
+        <p>
+          You can keep up with Ajay on{" "}
+          <a href="https://www.instagram.com/ajay_lalu_photography/">
+            Instagram
+          </a>{" "}
+          and check out his photography on his{" "}
+          <a href="https://www.lalu.co.za/">personal website</a>.
         </p>
       </>
-    )
+    ),
   },
   genevieveMaynard: {
     name: "Genevieve Maynard",
@@ -45,14 +91,30 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     image2: IMAGES.GenevieveMaynard,
     description: (
       <>
-        <p>Genevieve attended Sydney College of the Arts in Australia before leaving to pursue a 25 year career in music composition, performance and production. In 2010 she leftto live in Johannesburg and has since been working in the medium of photography.</p>
-        <p>From 2019 to 2022 she studied historical print processes with master printer Dennis Da Silva at the Alternative Print Workshop in Johannesburg.</p>
-        <p>For BAPF 2025 we exhibited some exemplary cyanotypes from Genieve that drew much attention for their mastery of tonal reproduction as much as their subject matter.</p>
         <p>
-          You can follow Genevieve on <a href="https://www.instagram.com/genmaynard/">Instagram</a> and find out more about her works on her <a href="https://www.genevievemaynard.com/">personal website</a>.
+          Genevieve attended Sydney College of the Arts in Australia before
+          leaving to pursue a 25 year career in music composition, performance
+          and production. In 2010 she leftto live in Johannesburg and has since
+          been working in the medium of photography.
+        </p>
+        <p>
+          From 2019 to 2022 she studied historical print processes with master
+          printer Dennis Da Silva at the Alternative Print Workshop in
+          Johannesburg.
+        </p>
+        <p>
+          For BAPF 2025 we exhibited some exemplary cyanotypes from Genieve that
+          drew much attention for their mastery of tonal reproduction as much as
+          their subject matter.
+        </p>
+        <p>
+          You can follow Genevieve on{" "}
+          <a href="https://www.instagram.com/genmaynard/">Instagram</a> and find
+          out more about her works on her{" "}
+          <a href="https://www.genevievemaynard.com/">personal website</a>.
         </p>
       </>
-    )
+    ),
   },
   gavin: {
     name: "Gavin Furlonger",
@@ -111,6 +173,42 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
           Carol has also established a vast Photographica collection (i.e.
           cameras, photographic advertising signs, magic lantern slides etc.),
           mainly from before 1940.
+        </p>
+      </>
+    ),
+  },
+  AlastairMclachlan: {
+    name: "Alastair McLachlan",
+    imageSquare: IMAGES.alastairSquareJpeg,
+    image2: IMAGES.alastairSquareJpeg,
+    description: (
+      <>
+        <p>
+          Alastair was born in Hammanskraal in 1974 and moved to Johannesburg in
+          2000. Since graduating in fine art and drama he has been documenting
+          fire and drive-ins from his Ford Capri, camera under the seat,
+          collecting roots & shooting the high-veld.
+        </p>
+        <p>
+          His current focus as a photographer remains with these two long term
+          themed projects: The South African Drive-in story and portraits of the
+          Johannesburg inner city, and he is in the process of compiling these
+          works into books. At the heart both these projects are documentary in
+          nature, preferring candid and un-staged observations, albeit from
+          dynamic and unexpected perspectives. His juxtaposition of geometric
+          elements, and subjective interpretations imbues his work with a sense
+          of visual poetry, composed to create imaginative narrative experiences
+          for the viewer. His works have been featured in numerous publications,
+          shown in several group and solo exhibitions, as well as private and
+          corporate collections, and been awarded both locally and
+          internationally.
+        </p>
+        <p>Alastair will be presenting at BAPF for this first time in 2026.</p>
+        <p>
+          Find out more about Alastair on{" "}
+          <a href="https://alastairmclachlan.com/bio">his website</a> and follow
+          him on <a href="https://www.instagram.com/intermission/">Instagram</a>
+          .
         </p>
       </>
     ),
@@ -226,18 +324,35 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     description: (
       <>
         <p>
-          David Goldblatt stands as a legend of documentary photography in South Africa and has chronicled the people and places of his country from 1948 until his passing in June 2018. His works comprise a vital document of our journey as a nation through the history of apartheid that captures the challenges of life but does not lose scope of the private and personal.
+          David Goldblatt stands as a legend of documentary photography in South
+          Africa and has chronicled the people and places of his country from
+          1948 until his passing in June 2018. His works comprise a vital
+          document of our journey as a nation through the history of apartheid
+          that captures the challenges of life but does not lose scope of the
+          private and personal.
         </p>
         <p>
-          The first South African to hold a solo exhibition in the MoMA (Museum of Modern Art) in New York, where he also showed solo exhibitions at the Jewish Museum and the New Museum, then featured in ILLUMInations, the San Francisco Museum of Modern Art and across the pond from the Barbican in London to the Centre Pompidou in Paris.
+          The first South African to hold a solo exhibition in the MoMA (Museum
+          of Modern Art) in New York, where he also showed solo exhibitions at
+          the Jewish Museum and the New Museum, then featured in ILLUMInations,
+          the San Francisco Museum of Modern Art and across the pond from the
+          Barbican in London to the Centre Pompidou in Paris.
         </p>
         <p>
-          Honoured with the 2006 Hasselblad Award, 2009 Henri Cartier-Bresson Award, awarded the Commandeur des Arts et des Lettres by the Ministry of Culture in France.
+          Honoured with the 2006 Hasselblad Award, 2009 Henri Cartier-Bresson
+          Award, awarded the Commandeur des Arts et des Lettres by the Ministry
+          of Culture in France.
         </p>
         <p>
           You can find out more about David Goldblatt at{" "}
-          <a href="https://www.plparchive.com/david-goldblatt-main/">Photography Legacy Project (PIP Archive)</a>{" "} and see his works at the {" "}
-          <a href="https://goodman-gallery.com/artists/david-goldblatt">Goodman Gallery</a> with locations across Johannesburg, Cape Town, London and New York.
+          <a href="https://www.plparchive.com/david-goldblatt-main/">
+            Photography Legacy Project (PIP Archive)
+          </a>{" "}
+          and see his works at the{" "}
+          <a href="https://goodman-gallery.com/artists/david-goldblatt">
+            Goodman Gallery
+          </a>{" "}
+          with locations across Johannesburg, Cape Town, London and New York.
         </p>
       </>
     ),
@@ -246,48 +361,78 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     name: "Herman van Wyk",
     imageSquare: IMAGES.HermanSquare,
     image2: IMAGES.HermanRectangleJpg,
-    description: (<>
-      <p>
-        This retrospective exhibition celebrates the life and work of Herman van Wyk — a brilliant artist whose creativity flowed across every medium. He was a painter, metal smith, poet, musician, and songwriter, a man whose love for life made him the heart of any musical gathering. His passion for history and the surreal shone through in his vibrant paintings, while his remarkable analog black-and-white photography — seldom exhibited during his lifetime — reveals a quieter, deeply observant side of his artistry.
-
+    description: (
+      <>
+        <p>
+          This retrospective exhibition celebrates the life and work of Herman
+          van Wyk — a brilliant artist whose creativity flowed across every
+          medium. He was a painter, metal smith, poet, musician, and songwriter,
+          a man whose love for life made him the heart of any musical gathering.
+          His passion for history and the surreal shone through in his vibrant
+          paintings, while his remarkable analog black-and-white photography —
+          seldom exhibited during his lifetime — reveals a quieter, deeply
+          observant side of his artistry.
         </p>
         <p>
-        Herman lived in Barrydale, working as a metal smith and musician until his untimely passing in 2024 at the age of 61. In preparation for the 2024 BAPF, his close friend Graham Abbott, director of the festival, built a dedicated darkroom so Herman could print his exhibition. Tragically, Herman fell ill and passed away within weeks, before he was able to complete the work.
-
+          Herman lived in Barrydale, working as a metal smith and musician until
+          his untimely passing in 2024 at the age of 61. In preparation for the
+          2024 BAPF, his close friend Graham Abbott, director of the festival,
+          built a dedicated darkroom so Herman could print his exhibition.
+          Tragically, Herman fell ill and passed away within weeks, before he
+          was able to complete the work.
         </p>
         <p>
-        Honouring a promise made to him, Graham has printed a selection of Herman’s photographs for this year’s BAPF 25, drawn from negatives entrusted to Gavin Furlonger of the PAPA Agency at Gallery F. This retrospective exhibition represents the first public showing of this body of work.
-
+          Honouring a promise made to him, Graham has printed a selection of
+          Herman’s photographs for this year’s BAPF 25, drawn from negatives
+          entrusted to Gavin Furlonger of the PAPA Agency at Gallery F. This
+          retrospective exhibition represents the first public showing of this
+          body of work.
         </p>
         <p>
-        A second retrospective exhibition of Herman’s photographs and artworks will be presented at BAPF 26 next year, ensuring his legacy continues to be shared, remembered, and celebrated.
-
+          A second retrospective exhibition of Herman’s photographs and artworks
+          will be presented at BAPF 26 next year, ensuring his legacy continues
+          to be shared, remembered, and celebrated.
         </p>
-    </>)
+      </>
+    ),
   },
   PatrickDeMervelac: {
     name: "Patrick de Mervelec",
     imageSquare: IMAGES.Bapf2025ArtistPatrickDeMervelac,
     image2: IMAGES.Bapf2025ArtistPatrickDeMervelac,
-    description: <>
-      <p>
-        Patrick de Mervelec studied at the National Institute of Photography in Paris and began his career as a photojournalist for Paris Match before moving into fashion photography for Marie Claire, Vogue, and major couture houses such as Ungaro, Givenchy, and Armani.
-      </p><p>
-        In 1981, advertising legend Jacques Séguéla commissioned him to photograph François Mitterrand for the presidential campaign, resulting in the iconic “La force tranquille” (The Quiet Strength) image. He later photographed Thabo Mbeki during the 1999 ANC campaign.
-      </p><p>
-        As a member of the Leica Association in Paris, Patrick worked for a decade alongside masters such as Doisneau, Salgado, Depardon, and Sieff. He has exhibited widely in Europe and South Africa and is the author of six photography books, including Nude Landscape (2002) and My Pilgrimage with Johnny Clegg (2007).
-      </p>
-    </>
+    description: (
+      <>
+        <p>
+          Patrick de Mervelec studied at the National Institute of Photography
+          in Paris and began his career as a photojournalist for Paris Match
+          before moving into fashion photography for Marie Claire, Vogue, and
+          major couture houses such as Ungaro, Givenchy, and Armani.
+        </p>
+        <p>
+          In 1981, advertising legend Jacques Séguéla commissioned him to
+          photograph François Mitterrand for the presidential campaign,
+          resulting in the iconic “La force tranquille” (The Quiet Strength)
+          image. He later photographed Thabo Mbeki during the 1999 ANC campaign.
+        </p>
+        <p>
+          As a member of the Leica Association in Paris, Patrick worked for a
+          decade alongside masters such as Doisneau, Salgado, Depardon, and
+          Sieff. He has exhibited widely in Europe and South Africa and is the
+          author of six photography books, including Nude Landscape (2002) and
+          My Pilgrimage with Johnny Clegg (2007).
+        </p>
+      </>
+    ),
   },
   RodgerBosch: {
     name: "Rodger Bosch",
     imageSquare: IMAGES.Bapf2025ArtistRodgerBosch,
     image2: IMAGES.Bapf2025ArtistRodgerBosch,
-    description: <>
-      <p>
-        Rodger Bosch
-      </p>
-    </>
+    description: (
+      <>
+        <p>Rodger Bosch</p>
+      </>
+    ),
   },
   // the returning alumni
   nikolai: {
@@ -403,10 +548,20 @@ export const ARTISTS: { [key: string]: ArtistProfileInfo } = {
     name: "Jillian Edelstein",
     imageSquare: IMAGES.Bapf2025ArtistJillianEdelstein,
     image2: IMAGES.Bapf2025ArtistJillianEdelstein,
-    description: <>
-      <p>
-        Jillian Edelstein is a South African–born, London-based photographer known for her powerful portraits and documentary work. She began her career as a press photographer in Johannesburg before moving to the UK in 1985 to study photojournalism. Edelstein has photographed for major international publications and is widely recognised for her long-term project documenting South Africa’s Truth and Reconciliation Commission, published in her award-winning book Truth and Lies. Her work has been exhibited internationally, including at the National Portrait Gallery and the Photographers’ Gallery in London.
-      </p>
-    </>
-  }
+    description: (
+      <>
+        <p>
+          Jillian Edelstein is a South African–born, London-based photographer
+          known for her powerful portraits and documentary work. She began her
+          career as a press photographer in Johannesburg before moving to the UK
+          in 1985 to study photojournalism. Edelstein has photographed for major
+          international publications and is widely recognised for her long-term
+          project documenting South Africa’s Truth and Reconciliation
+          Commission, published in her award-winning book Truth and Lies. Her
+          work has been exhibited internationally, including at the National
+          Portrait Gallery and the Photographers’ Gallery in London.
+        </p>
+      </>
+    ),
+  },
 };
