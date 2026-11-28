@@ -121,6 +121,10 @@ export function Bapf2026App() {
           <BapfImg imageInfo={IMAGES.bapf2026Poster2} hasBorder />
           <BapfImg imageInfo={IMAGES.bapf2026Poster3} hasBorder />
         </div>
+        <div className="BapfMainPoster BapfMainPoster--double">
+          <BapfImg imageInfo={IMAGES.bapf2026PosterGenevieve} hasBorder />
+          <BapfImg imageInfo={IMAGES.bapf2026PosterAlastair} hasBorder />
+        </div>
 
         <Article
           articleId="the-programme"
@@ -175,7 +179,7 @@ export function Bapf2026App() {
             of some of the other famous photographers we have have exhibitions
             held over the years Roger Ballen, David Goldbladt, Jurgen
             Schadenberg, All Drum magazine photographers, Billy Monk, Paul
-            Wineberg, Rashied Lombard, Gerda Genus, Robert Koen, Roy Zetisky,
+            Wineberg, Rashied Lombard, Gerda Genis, Robert Koen, Roy Zetisky,
             Johan Wilke, John Hog, Rodger Bosch, Paul Alberts, to name a few.
           </p>
           <p>

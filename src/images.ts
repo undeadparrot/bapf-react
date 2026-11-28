@@ -148,6 +148,8 @@ import Bapf2025ArtPatrickdemervelacNude1Jpeg from "./assets/bapf-2025-art-patric
 import Bapf2026Poster1Jpg from "./assets/bapf-2026-poster-1.jpg";
 import Bapf2026Poster2Png from "./assets/bapf-2026-poster-2.png";
 import Bapf2026Poster3Png from "./assets/bapf-2026-poster-3.png";
+import Bapf2026PosterAlastairJpeg from "./assets/bapf-2026-poster-alastair.jpeg";
+import Bapf2026PosterGenevievePng from "./assets/bapf-2026-poster-genevieve.png";
 import tonyMeintjesSquarePng from "./assets/tony-meintjes-square.png";
 import tonyMeintjesPng from "./assets/tony-meintjes.png";
 import ajayLaluSquarePng from "./assets/ajay-lalu-square.png";
@@ -1023,6 +1025,16 @@ export const IMAGES = {
     filename: Bapf2026Poster3Png,
     title: "Festival Poster",
     description: "Festival poster from Barrydale Analog Photo Festival 2026",
+  },
+  bapf2026PosterGenevieve: {
+    filename: Bapf2026PosterGenevievePng,
+    title: "Festival Poster for Genevieve Maynard talk",
+    description: "Festival poster for talk 'Van Dyke Brown, Cyanotype and Salted Paper Processes' by Genevieve Maynard at Barrydale Analog Photo Festival 2026",
+  },
+  bapf2026PosterAlastair: {
+    filename: Bapf2026PosterAlastairJpeg,
+    title: "Festival Poster for Alastair Mclachlan talk",
+    description: "Festival poster for talk 'Tickets' by Alastair Mclachlan at Barrydale Analog Photo Festival 2026",
   },
 
   bapf2026ArtTony2: {

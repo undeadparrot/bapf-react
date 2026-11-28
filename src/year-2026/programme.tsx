@@ -4,8 +4,8 @@ export const PROGRAMME: ProgrammeDay[] = [
   {
     title: "11 Dec (Friday)",
     features: [
-      "6:30 PM | Tony Meintjes Opening Talk | Karoolkie Kelder Gallery, 23 Bain Street",
-      "8:00 PM | Alastair McLachlan Opening Talk | Karoolkie Kelder Gallery, 23 Bain Street",
+      "6:30 PM | Tony Meintjes Opening Talk | Karoolkie Kelder Gallery",
+      "8:00 PM | Alastair McLachlan Talk - Tickets | Karoolkie Kelder Gallery",
       " (...)  | Dinner at the Karoolkie"
     ],
   },
@@ -14,22 +14,22 @@ export const PROGRAMME: ProgrammeDay[] = [
     features: [
       // "12:00 PM | Roy Zetisky: Wild at Art - Digital Exhibition | Info Hub / Tourism Centre, 1 Van Riebeeck St | Digital Photos",
       // "(morning) Photo workshops at the Karoolkie Kelder venue",
-      "10:30 AM | Ajay Lalu presents 'An Analogue Obsession in a Digital World' | Karoolkie Kelder Gallery",
-      " 1:30 PM | Geneieve Maynard Exhibition Opening & Talk | Karoolkie Kelder Gallery, 23 Bain Street",
+      "10:30 AM | Ajay Lalu Talk - An Analogue Obsession in a Digital World | Karoolkie Kelder Gallery",
+      " 1:30 PM | Geneieve Maynard Talk - #altprocess - a 'how to' guide | Karoolkie Kelder Gallery",
       " 5:30 PM | Puppet Parade Photo Walkabout",
     ],
   },
   {
     title: "13 Dec (Sunday)",
     features: [
-      "All Day | Workshops in Darkroom",
+      "10:30 AM | Nikolai Nielsen Talk - The History of Capturing Light | Karoolkie Kelder Gallery",
       "2:00 PM | Barrydale town photo walk",
-      "7:00 PM | Nikolai Nielsen presents The History of Capturing Light | Karoolkie Kelder Gallery, 23 Bain Street"
     ],
   },
   {
     title: "14 Dec (Monday)",
     features: [
+      "All Day | Workshops in Darkroom",
       "12:00 PM | Darkroom processing workshop",
       "7:00 PM | Demonstration | Karoolkie Kelder Gallery",
     ],
@@ -37,7 +37,7 @@ export const PROGRAMME: ProgrammeDay[] = [
   {
     title: "15 Dec (Tuesday)",
     features: [
-      "TBC | Photo Walkabout",
+      "All Day | Workshops in Darkroom",
       "12:00 PM | Darkroom printing workshop",
     ],
   },
@@ -59,7 +59,7 @@ export const PROGRAMME: ProgrammeDay[] = [
     title: "18 Dec (Friday)",
     features: [
       "TBC | Photo Walkabout",
-      "7:00 PM (TBC) | Live performance | Karoolkie Kelder Gallery | Tickets R150",
+      "7:00 PM (TBC) | Live performance | Karoolkie Kelder Gallery | Ticket Price TBC",
     ],
   },
   {

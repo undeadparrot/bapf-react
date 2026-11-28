@@ -221,7 +221,7 @@ export function Bapf2025App() {
             the other famous photographers we have have exhibitions held over
             the years Roger Ballen, David Goldbladt, Jurgen Schadenberg, All
             Drum magazine photographers, Billy Monk, Paul Wineberg, Rashied
-            Lombard, Gerda Genus, Robert Koen, Roy Zetisky, Johan Wilke, John
+            Lombard, Gerda Genis, Robert Koen, Roy Zetisky, Johan Wilke, John
             Hog, Rodger Bosch, Paul Alberts, to name a few.
           </p>
           <p>
